@@ -1,0 +1,138 @@
+,0,column_name,percent_missing
+label_encoded,0,label_encoded,0.0
+label,0,label,0.0
+Heart - Left Ventricle_GTExTPM,35,Heart - Left Ventricle_GTExTPM,4.353233830845771
+Kidney - Cortex_GTExTPM,35,Kidney - Cortex_GTExTPM,4.353233830845771
+Kidney - Medulla_GTExTPM,35,Kidney - Medulla_GTExTPM,4.353233830845771
+Liver_GTExTPM,35,Liver_GTExTPM,4.353233830845771
+Lung_GTExTPM,35,Lung_GTExTPM,4.353233830845771
+Minor Salivary Gland_GTExTPM,35,Minor Salivary Gland_GTExTPM,4.353233830845771
+Muscle - Skeletal_GTExTPM,35,Muscle - Skeletal_GTExTPM,4.353233830845771
+Nerve - Tibial_GTExTPM,35,Nerve - Tibial_GTExTPM,4.353233830845771
+Ovary_GTExTPM,35,Ovary_GTExTPM,4.353233830845771
+Pancreas_GTExTPM,35,Pancreas_GTExTPM,4.353233830845771
+Pituitary_GTExTPM,35,Pituitary_GTExTPM,4.353233830845771
+Prostate_GTExTPM,35,Prostate_GTExTPM,4.353233830845771
+Skin - Sun Exposed (Lower leg)_GTExTPM,35,Skin - Sun Exposed (Lower leg)_GTExTPM,4.353233830845771
+Small Intestine - Terminal Ileum_GTExTPM,35,Small Intestine - Terminal Ileum_GTExTPM,4.353233830845771
+Spleen_GTExTPM,35,Spleen_GTExTPM,4.353233830845771
+Stomach_GTExTPM,35,Stomach_GTExTPM,4.353233830845771
+Testis_GTExTPM,35,Testis_GTExTPM,4.353233830845771
+Thyroid_GTExTPM,35,Thyroid_GTExTPM,4.353233830845771
+Uterus_GTExTPM,35,Uterus_GTExTPM,4.353233830845771
+Vagina_GTExTPM,35,Vagina_GTExTPM,4.353233830845771
+Whole Blood_GTExTPM,35,Whole Blood_GTExTPM,4.353233830845771
+ppiScore_Exomiser,35,ppiScore_Exomiser,4.353233830845771
+fishScore_Exomiser,35,fishScore_Exomiser,4.353233830845771
+mouseScore_Exomiser,35,mouseScore_Exomiser,4.353233830845771
+humanScore_Exomiser,35,humanScore_Exomiser,4.353233830845771
+ExomiserScore,35,ExomiserScore,4.353233830845771
+Heart - Atrial Appendage_GTExTPM,35,Heart - Atrial Appendage_GTExTPM,4.353233830845771
+Fallopian Tube_GTExTPM,35,Fallopian Tube_GTExTPM,4.353233830845771
+Skin - Not Sun Exposed (Suprapubic)_GTExTPM,35,Skin - Not Sun Exposed (Suprapubic)_GTExTPM,4.353233830845771
+Esophagus - Mucosa_GTExTPM,35,Esophagus - Mucosa_GTExTPM,4.353233830845771
+Artery - Coronary_GTExTPM,35,Artery - Coronary_GTExTPM,4.353233830845771
+Artery - Aorta_GTExTPM,35,Artery - Aorta_GTExTPM,4.353233830845771
+Adrenal Gland_GTExTPM,35,Adrenal Gland_GTExTPM,4.353233830845771
+Adipose - Visceral (Omentum)_GTExTPM,35,Adipose - Visceral (Omentum)_GTExTPM,4.353233830845771
+Bladder_GTExTPM,35,Bladder_GTExTPM,4.353233830845771
+Brain - Amygdala_GTExTPM,35,Brain - Amygdala_GTExTPM,4.353233830845771
+Brain - Anterior cingulate cortex (BA24)_GTExTPM,35,Brain - Anterior cingulate cortex (BA24)_GTExTPM,4.353233830845771
+Brain - Caudate (basal ganglia)_GTExTPM,35,Brain - Caudate (basal ganglia)_GTExTPM,4.353233830845771
+Brain - Cerebellar Hemisphere_GTExTPM,35,Brain - Cerebellar Hemisphere_GTExTPM,4.353233830845771
+Brain - Cerebellum_GTExTPM,35,Brain - Cerebellum_GTExTPM,4.353233830845771
+Brain - Cortex_GTExTPM,35,Brain - Cortex_GTExTPM,4.353233830845771
+Brain - Frontal Cortex (BA9)_GTExTPM,35,Brain - Frontal Cortex (BA9)_GTExTPM,4.353233830845771
+Brain - Hippocampus_GTExTPM,35,Brain - Hippocampus_GTExTPM,4.353233830845771
+Adipose - Subcutaneous_GTExTPM,35,Adipose - Subcutaneous_GTExTPM,4.353233830845771
+Brain - Hypothalamus_GTExTPM,35,Brain - Hypothalamus_GTExTPM,4.353233830845771
+Brain - Nucleus accumbens (basal ganglia)_GTExTPM,35,Brain - Nucleus accumbens (basal ganglia)_GTExTPM,4.353233830845771
+Brain - Putamen (basal ganglia)_GTExTPM,35,Brain - Putamen (basal ganglia)_GTExTPM,4.353233830845771
+Brain - Spinal cord (cervical c-1)_GTExTPM,35,Brain - Spinal cord (cervical c-1)_GTExTPM,4.353233830845771
+Brain - Substantia nigra_GTExTPM,35,Brain - Substantia nigra_GTExTPM,4.353233830845771
+Breast - Mammary Tissue_GTExTPM,35,Breast - Mammary Tissue_GTExTPM,4.353233830845771
+Cells - Cultured fibroblasts_GTExTPM,35,Cells - Cultured fibroblasts_GTExTPM,4.353233830845771
+Cells - EBV-transformed lymphocytes_GTExTPM,35,Cells - EBV-transformed lymphocytes_GTExTPM,4.353233830845771
+Cervix - Ectocervix_GTExTPM,35,Cervix - Ectocervix_GTExTPM,4.353233830845771
+Cervix - Endocervix_GTExTPM,35,Cervix - Endocervix_GTExTPM,4.353233830845771
+Colon - Sigmoid_GTExTPM,35,Colon - Sigmoid_GTExTPM,4.353233830845771
+Colon - Transverse_GTExTPM,35,Colon - Transverse_GTExTPM,4.353233830845771
+Esophagus - Gastroesophageal Junction_GTExTPM,35,Esophagus - Gastroesophageal Junction_GTExTPM,4.353233830845771
+Artery - Tibial_GTExTPM,35,Artery - Tibial_GTExTPM,4.353233830845771
+Esophagus - Muscularis_GTExTPM,35,Esophagus - Muscularis_GTExTPM,4.353233830845771
+Gene_length,60,Gene_length,7.462686567164179
+SDI,63,SDI,7.835820895522388
+pLI_ExAC,63,pLI_ExAC,7.835820895522388
+HIPred,63,HIPred,7.835820895522388
+GDI_Score,72,GDI_Score,8.955223880597014
+Testis_GTExFC,79,Testis_GTExFC,9.82587064676617
+Small_Intestine_Terminal_Ileum_GTExFC,99,Small_Intestine_Terminal_Ileum_GTExFC,12.313432835820896
+Pituitary_GTExFC,105,Pituitary_GTExFC,13.059701492537313
+Colon_Transverse_GTExFC,107,Colon_Transverse_GTExFC,13.308457711442786
+Lung_GTExFC,108,Lung_GTExFC,13.432835820895523
+Breast_Mammary_Tissue_GTExFC,108,Breast_Mammary_Tissue_GTExFC,13.432835820895523
+Prostate_GTExFC,110,Prostate_GTExFC,13.681592039800995
+Stomach_GTExFC,116,Stomach_GTExFC,14.427860696517413
+Thyroid_GTExFC,118,Thyroid_GTExFC,14.676616915422885
+Minor_Salivary_Gland_GTExFC,119,Minor_Salivary_Gland_GTExFC,14.800995024875622
+RVIS_Score,119,RVIS_Score,14.800995024875622
+Adipose_Visceral_Omentum_GTExFC,120,Adipose_Visceral_Omentum_GTExFC,14.925373134328359
+Vagina_GTExFC,120,Vagina_GTExFC,14.925373134328359
+Colon_Sigmoid_GTExFC,120,Colon_Sigmoid_GTExFC,14.925373134328359
+Uterus_GTExFC,122,Uterus_GTExFC,15.17412935323383
+Ovary_GTExFC,122,Ovary_GTExFC,15.17412935323383
+Artery_Coronary_GTExFC,123,Artery_Coronary_GTExFC,15.298507462686567
+Skin_Sun_Exposed_Lower_leg_GTExFC,123,Skin_Sun_Exposed_Lower_leg_GTExFC,15.298507462686567
+Spleen_GTExFC,124,Spleen_GTExFC,15.422885572139304
+`Brain_Spinal_cord_cervical_c-1`_GTExFC,124,`Brain_Spinal_cord_cervical_c-1`_GTExFC,15.422885572139304
+Kidney_Cortex_GTExFC,124,Kidney_Cortex_GTExFC,15.422885572139304
+Brain_Hypothalamus_GTExFC,124,Brain_Hypothalamus_GTExFC,15.422885572139304
+Nerve_Tibial_GTExFC,125,Nerve_Tibial_GTExFC,15.54726368159204
+Skin_Not_Sun_Exposed_Suprapubic_GTExFC,126,Skin_Not_Sun_Exposed_Suprapubic_GTExFC,15.671641791044776
+Adipose_Subcutaneous_GTExFC,126,Adipose_Subcutaneous_GTExFC,15.671641791044776
+Brain_Hippocampus_GTExFC,129,Brain_Hippocampus_GTExFC,16.044776119402986
+Brain_Cerebellum_GTExFC,129,Brain_Cerebellum_GTExFC,16.044776119402986
+Brain_Cortex_GTExFC,129,Brain_Cortex_GTExFC,16.044776119402986
+Brain_Frontal_Cortex_BA9_GTExFC,131,Brain_Frontal_Cortex_BA9_GTExFC,16.29353233830846
+Liver_GTExFC,132,Liver_GTExFC,16.417910447761194
+Artery_Aorta_GTExFC,132,Artery_Aorta_GTExFC,16.417910447761194
+Esophagus_Mucosa_GTExFC,132,Esophagus_Mucosa_GTExFC,16.417910447761194
+Brain_Anterior_cingulate_cortex_BA24_GTExFC,134,Brain_Anterior_cingulate_cortex_BA24_GTExFC,16.666666666666668
+Esophagus_Gastroesophageal_Junction_GTExFC,134,Esophagus_Gastroesophageal_Junction_GTExFC,16.666666666666668
+Brain_Substantia_nigra_GTExFC,134,Brain_Substantia_nigra_GTExFC,16.666666666666668
+Adrenal_Gland_GTExFC,135,Adrenal_Gland_GTExFC,16.791044776119403
+Brain_Nucleus_accumbens_basal_ganglia_GTExFC,135,Brain_Nucleus_accumbens_basal_ganglia_GTExFC,16.791044776119403
+Brain_Amygdala_GTExFC,135,Brain_Amygdala_GTExFC,16.791044776119403
+Brain_Caudate_basal_ganglia_GTExFC,136,Brain_Caudate_basal_ganglia_GTExFC,16.915422885572138
+Brain_Cerebellar_Hemisphere_GTExFC,137,Brain_Cerebellar_Hemisphere_GTExFC,17.039800995024876
+SignalValue_H3k4me1_median,137,SignalValue_H3k4me1_median,17.039800995024876
+Heart_Atrial_Appendage_GTExFC,138,Heart_Atrial_Appendage_GTExFC,17.16417910447761
+Brain_Putamen_basal_ganglia_GTExFC,141,Brain_Putamen_basal_ganglia_GTExFC,17.53731343283582
+Esophagus_Muscularis_GTExFC,142,Esophagus_Muscularis_GTExFC,17.66169154228856
+Artery_Tibial_GTExFC,142,Artery_Tibial_GTExFC,17.66169154228856
+Pancreas_GTExFC,147,Pancreas_GTExFC,18.28358208955224
+CNVs_ExAC,152,CNVs_ExAC,18.90547263681592
+Heart_Left_Ventricle_GTExFC,166,Heart_Left_Ventricle_GTExFC,20.64676616915423
+Muscle_Skeletal_GTExFC,171,Muscle_Skeletal_GTExFC,21.26865671641791
+Cells_Cultured_fibroblasts_GTExFC,177,Cells_Cultured_fibroblasts_GTExFC,22.01492537313433
+Whole_Blood_GTExFC,178,Whole_Blood_GTExFC,22.139303482587064
+`Cells_EBV-transformed_lymphocytes`_GTExFC,180,`Cells_EBV-transformed_lymphocytes`_GTExFC,22.388059701492537
+SignalValue_H3k4me3_median,194,SignalValue_H3k4me3_median,24.129353233830845
+SignalValue_H3k9ac_median,209,SignalValue_H3k9ac_median,25.99502487562189
+logpval_gwascatalog,211,logpval_gwascatalog,26.243781094527364
+SignalValue_H3k27Ac_median,228,SignalValue_H3k27Ac_median,28.35820895522388
+SignalValue_H3k9me1_median,241,SignalValue_H3k9me1_median,29.975124378109452
+SignalValue_H3k36me3_median,276,SignalValue_H3k36me3_median,34.32835820895522
+SignalValue_H3k79me2_median,328,SignalValue_H3k79me2_median,40.79601990049751
+SignalValue_H3k27me3_median,333,SignalValue_H3k27me3_median,41.417910447761194
+H4k20me1_count,333,H4k20me1_count,41.417910447761194
+SignalValue_H4k20me1_median,333,SignalValue_H4k20me1_median,41.417910447761194
+ui_panglaoDB,523,ui_panglaoDB,65.04975124378109
+mousecellspecificity,525,mousecellspecificity,65.29850746268657
+mousecellsensitivity,525,mousecellsensitivity,65.29850746268657
+humancellspecificity,525,humancellspecificity,65.29850746268657
+humancellsensitivity,525,humancellsensitivity,65.29850746268657
+ExAc_constraint_obs_exp,668,ExAc_constraint_obs_exp,83.08457711442786
+O_GlcNAc_Score,681,O_GlcNAc_Score,84.70149253731343
+IPA_Hyperlipidemia_Annotation,684,IPA_Hyperlipidemia_Annotation,85.07462686567165
+EMS_Max,749,EMS_Max,93.1592039800995

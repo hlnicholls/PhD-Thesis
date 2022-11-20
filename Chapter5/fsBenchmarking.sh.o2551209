@@ -1,0 +1,874 @@
+XGBR Nested CV results for all scores: 
+ {'fit_time': array([81.92649984, 83.95335412, 80.86594296, 87.63691807, 75.800457  ,
+       84.44146681, 78.38028669, 85.85252047, 83.6389246 , 87.72806263,
+       86.0451088 , 83.30866194, 82.88690686, 87.75036311, 76.66743398]), 'score_time': array([0.0032649 , 0.00318432, 0.00322247, 0.00311112, 0.00314856,
+       0.0031321 , 0.00311136, 0.00312519, 0.00319171, 0.0031395 ,
+       0.00318742, 0.0031302 , 0.00313735, 0.00320458, 0.00308847]), 'test_r2': array([0.35353588, 0.57997559, 0.80644715, 0.76709509, 0.71533697,
+       0.80661277, 0.60070088, 0.70760509, 0.59393041, 0.57465339,
+       0.5626596 , 0.7743826 , 0.8376769 , 0.47120767, 0.73416131]), 'test_neg_mean_squared_error': array([-0.01689296, -0.01076514, -0.00745508, -0.00740091, -0.00990202,
+       -0.00659562, -0.01556583, -0.00737338, -0.01216752, -0.01181334,
+       -0.01389717, -0.0065339 , -0.0062522 , -0.01381804, -0.00835897]), 'test_max_error': array([-0.63481002, -0.60866662, -0.48869487, -0.64089515, -0.61023703,
+       -0.47074893, -0.62700274, -0.61861084, -0.60736355, -0.63587799,
+       -0.55096766, -0.46871146, -0.40378436, -0.63009318, -0.56778409]), 'test_neg_mean_absolute_error': array([-0.05222614, -0.0434787 , -0.04350027, -0.03817362, -0.04626945,
+       -0.03957615, -0.05192355, -0.03808561, -0.04884707, -0.04980228,
+       -0.05273329, -0.0362387 , -0.03864937, -0.04965367, -0.04654672]), 'test_explained_variance': array([0.39171635, 0.58015388, 0.80667156, 0.76714267, 0.71647577,
+       0.80671288, 0.60429897, 0.71578215, 0.59728226, 0.58625119,
+       0.56567529, 0.77472343, 0.84109678, 0.47190202, 0.73419266]), 'test_neg_root_mean_squared_error': array([-0.12997293, -0.1037552 , -0.08634281, -0.08602857, -0.09950889,
+       -0.0812134 , -0.12476308, -0.08586839, -0.11030648, -0.10868918,
+       -0.11788626, -0.08083257, -0.07907088, -0.11755017, -0.09142738]), 'test_neg_median_absolute_error': array([-0.00986212, -0.00692827, -0.0138818 , -0.01287621, -0.0141353 ,
+       -0.0131138 , -0.01331997, -0.01187187, -0.01179403, -0.00960541,
+       -0.01281089, -0.00863022, -0.01052803, -0.01242203, -0.01871008])} 
+
+XGBR r2 Nested CV Median 0.7076050937093008
+XGBR MSE Nested CV Median -0.009902020072867824
+XGBR RMSE Nested CV Median -0.09950889444098866
+XGBR Explained Variance Nested CV Median 0.715782149253519
+XGBR MAE Nested CV Median -0.046269452888518574
+
+
+Best Parameters: 
+OrderedDict([('learning_rate', 0.2), ('max_depth', 3), ('n_estimators', 50), ('reg_alpha', 1), ('reg_lambda', 6)])
+
+Best Estimator: XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+             colsample_bynode=1, colsample_bytree=1, gamma=0, gpu_id=-1,
+             importance_type='gain', interaction_constraints='',
+             learning_rate=0.2, max_delta_step=0, max_depth=3,
+             min_child_weight=1, missing=nan, monotone_constraints='()',
+             n_estimators=50, n_jobs=4, num_parallel_tree=1, random_state=0,
+             reg_alpha=1, reg_lambda=6, scale_pos_weight=1, subsample=1,
+             tree_method='exact', validate_parameters=1, verbosity=None)
+
+
+Non-nested CV Results:
+XGBR Train r2: 0.8758829895198543 Test r2: 0.39528191267716695
+XGBR Train MSE: 0.004059517143518041 Test MSE: 0.01580208311593384
+XGBR Train Explained Variance Score: 0.8758830193598091 Test Explained Variance Score: 0.42900742238900746
+XGBR Train MAE: 0.03303982750346093 Test MAE: 0.05513085158345122
+XGBR Train Max Error: 0.4216481685638428 Test Max Error: 0.6137939244508743
+
+
+XGBR Best model predicted r2: 0.826331853122557
+XGBR SELECTED FEATURES Ranked SHAP Importance: Index(['humanScore_Exomiser', 'Testis_GTExTPM', 'pLI_ExAC',
+       'Pituitary_GTExTPM', 'GDI_Score', 'Brain - Amygdala_GTExTPM', 'HIPred',
+       'Liver_GTExTPM', 'Adrenal Gland_GTExTPM', 'Whole Blood_GTExTPM',
+       'Small Intestine - Terminal Ileum_GTExTPM', 'Ovary_GTExTPM',
+       'Cells - Cultured fibroblasts_GTExTPM', 'Spleen_GTExTPM',
+       'Heart - Atrial Appendage_GTExTPM', 'Kidney - Cortex_GTExTPM',
+       'Lung_GTExTPM'],
+      dtype='object')
+LGBM Nested CV results for all scores: 
+ {'fit_time': array([70.5992105 , 69.26649261, 69.58629107, 69.06296301, 66.83866668,
+       71.87465072, 70.2928648 , 71.70924759, 67.7410779 , 67.85268164,
+       71.26251745, 69.20663977, 66.22310901, 72.03970695, 72.40050864]), 'score_time': array([0.00314188, 0.00304246, 0.00306535, 0.00300765, 0.00300479,
+       0.00314879, 0.00303364, 0.00327396, 0.00316572, 0.00314116,
+       0.00306869, 0.00312901, 0.00308514, 0.00311422, 0.00314331]), 'test_r2': array([0.43703152, 0.52730256, 0.80764369, 0.7640932 , 0.73084174,
+       0.76909303, 0.62503375, 0.66036987, 0.53006095, 0.60165242,
+       0.53240783, 0.74492459, 0.81037528, 0.50788282, 0.72603417]), 'test_neg_mean_squared_error': array([-0.01471111, -0.01211514, -0.00740899, -0.0074963 , -0.00936269,
+       -0.00787525, -0.01461726, -0.00856452, -0.01408131, -0.01106348,
+       -0.01485847, -0.00738701, -0.00730378, -0.01285967, -0.00861451]), 'test_max_error': array([-0.63129931, -0.58351534, -0.47129626, -0.55207713, -0.58815189,
+       -0.4429663 , -0.63461466, -0.60447782, -0.63859102, -0.62992452,
+       -0.57090401, -0.48362629, -0.42639782, -0.60577389, -0.52705952]), 'test_neg_mean_absolute_error': array([-0.05529523, -0.05021241, -0.04703342, -0.04244278, -0.04778427,
+       -0.04646403, -0.05394069, -0.04378739, -0.04937604, -0.0552214 ,
+       -0.0542863 , -0.04136271, -0.04588096, -0.0488884 , -0.04707764]), 'test_explained_variance': array([0.46335996, 0.52760632, 0.80827923, 0.76457205, 0.73244668,
+       0.76949949, 0.63016578, 0.67150363, 0.53252669, 0.60587457,
+       0.53540018, 0.74553193, 0.81450267, 0.50896317, 0.72632263]), 'test_neg_root_mean_squared_error': array([-0.12128937, -0.1100688 , -0.08607552, -0.0865812 , -0.09676097,
+       -0.08874263, -0.12090186, -0.09254469, -0.1186647 , -0.10518309,
+       -0.12189531, -0.08594773, -0.08546216, -0.1134005 , -0.0928144 ]), 'test_neg_median_absolute_error': array([-0.01356003, -0.00968809, -0.01571187, -0.01500417, -0.01687066,
+       -0.02019853, -0.013111  , -0.01157355, -0.01116117, -0.020329  ,
+       -0.01392684, -0.01204621, -0.01614595, -0.01246591, -0.01465446])} 
+
+LGBM r2 Nested CV Median 0.6603698726486726
+LGBM MSE Nested CV Median -0.009362685926478768
+LGBM RMSE Nested CV Median -0.09676097315797712
+LGBM Explained Variance Nested CV Median 0.671503633237869
+LGBM MAE Nested CV Median -0.04778426947109112
+
+
+Best Parameters: 
+OrderedDict([('learning_rate', 0.1478572369480306), ('max_depth', 3), ('n_estimators', 50), ('reg_alpha', 1), ('reg_lambda', 1)])
+
+Best Estimator: LGBMRegressor(learning_rate=0.1478572369480306, max_depth=3, n_estimators=50,
+              random_state=0, reg_alpha=1, reg_lambda=1)
+
+
+Non-nested CV Results:
+LGBM Train r2: 0.8466481633209809 Test r2: 0.43860248620425235
+LGBM Train MSE: 0.0050157058051929155 Test MSE: 0.014670059255798378
+LGBM Train Explained Variance Score: 0.8466582415810059 Test Explained Variance Score: 0.46302377104149295
+LGBM Train MAE: 0.0353461102725599 Test MAE: 0.05455106689081423
+LGBM Train Max Error: 0.46062702306931247 Test Max Error: 0.5965240716388807
+
+
+LGBM Best model predicted r2: 0.7578607758966809
+LGBM SELECTED FEATURES Ranked SHAP Importance: Index(['humanScore_Exomiser', 'Testis_GTExTPM', 'pLI_ExAC', 'HIPred',
+       'Pituitary_GTExTPM', 'Adrenal Gland_GTExTPM', 'Whole Blood_GTExTPM',
+       'Brain - Amygdala_GTExTPM', 'GDI_Score',
+       'Small Intestine - Terminal Ileum_GTExTPM', 'Liver_GTExTPM',
+       'Heart - Atrial Appendage_GTExTPM', 'Ovary_GTExTPM',
+       'Cells - Cultured fibroblasts_GTExTPM', 'Kidney - Cortex_GTExTPM',
+       'Spleen_GTExTPM', 'Lung_GTExTPM'],
+      dtype='object')
+CB Nested CV results for all scores: 
+ {'fit_time': array([218.52249765, 236.7873404 , 232.14133811, 256.71034312,
+       229.8998642 , 231.70802522, 234.52903342, 225.00506091,
+       222.09753728, 253.27635479, 226.36956453, 217.68724823,
+       247.18726778, 224.83049393, 219.28269696]), 'score_time': array([0.00423956, 0.00482702, 0.00474429, 0.00342703, 0.00467849,
+       0.00476336, 0.00327802, 0.00448322, 0.00509214, 0.0048542 ,
+       0.00485015, 0.00484538, 0.00440097, 0.00489211, 0.004807  ]), 'test_r2': array([0.46280732, 0.55114093, 0.80082804, 0.78833073, 0.74235368,
+       0.74432587, 0.64299832, 0.67396789, 0.62469022, 0.63800974,
+       0.54165027, 0.74054541, 0.84598889, 0.43895802, 0.71307765]), 'test_neg_mean_squared_error': array([-0.01403756, -0.01150417, -0.00767151, -0.00672612, -0.00896224,
+       -0.00871996, -0.01391695, -0.00822162, -0.01124583, -0.01005371,
+       -0.01456477, -0.00751383, -0.00593205, -0.01466077, -0.00902191]), 'test_max_error': array([-0.64059849, -0.60739699, -0.59477352, -0.61454196, -0.60815414,
+       -0.61361679, -0.66420283, -0.6311151 , -0.59882573, -0.61807606,
+       -0.61541853, -0.5852871 , -0.44175502, -0.66150828, -0.60809655]), 'test_neg_mean_absolute_error': array([-0.05215712, -0.04567735, -0.04263425, -0.03334513, -0.04653922,
+       -0.0442826 , -0.04816735, -0.04450222, -0.04669205, -0.04607917,
+       -0.05187099, -0.03927414, -0.04085045, -0.05522325, -0.04281851]), 'test_explained_variance': array([0.49328705, 0.5518819 , 0.80099207, 0.78837929, 0.74390114,
+       0.74451613, 0.64489478, 0.6808355 , 0.62608804, 0.64065743,
+       0.54311328, 0.74125554, 0.84746396, 0.43940618, 0.71308652]), 'test_neg_root_mean_squared_error': array([-0.11848019, -0.10725748, -0.08758717, -0.08201292, -0.09466912,
+       -0.09338071, -0.11797013, -0.09067313, -0.10604635, -0.10026821,
+       -0.12068461, -0.08668237, -0.07701981, -0.12108166, -0.09498376]), 'test_neg_median_absolute_error': array([-0.01092638, -0.00942888, -0.01640143, -0.0094879 , -0.01642587,
+       -0.01779945, -0.00950426, -0.0162699 , -0.011474  , -0.01234903,
+       -0.01263309, -0.01075471, -0.01454816, -0.01556191, -0.01060988])} 
+
+CB r2 Nested CV Median 0.6739678859923509
+CB MSE Nested CV Median -0.009021914752467702
+CB RMSE Nested CV Median -0.09498376046708037
+CB Explained Variance Nested CV Median 0.68083550050662
+CB MAE Nested CV Median -0.045677354824923494
+
+
+Best Parameters: 
+OrderedDict([('depth', 4), ('iterations', 50), ('learning_rate', 0.11772633618138172)])
+
+Best Estimator: <catboost.core.CatBoostRegressor object at 0x2b827857b550>
+
+
+Non-nested CV Results:
+CB Train r2: 0.851960546977347 Test r2: 0.4668230379753653
+CB Train MSE: 0.0048419527278142655 Test MSE: 0.013932618927795471
+CB Train Explained Variance Score: 0.8519632160337867 Test Explained Variance Score: 0.48481507419393977
+CB Train MAE: 0.03498550858642702 Test MAE: 0.050742148187279554
+CB Train Max Error: 0.5420360268492658 Test Max Error: 0.6218949510300475
+
+
+CB Best model predicted r2: 0.7955138924229384
+CB SELECTED FEATURES Ranked SHAP Importance: Index(['pLI_ExAC', 'humanScore_Exomiser',
+       'Small Intestine - Terminal Ileum_GTExTPM', 'HIPred',
+       'Pituitary_GTExTPM', 'Testis_GTExTPM', 'GDI_Score', 'Liver_GTExTPM',
+       'Lung_GTExTPM', 'Adrenal Gland_GTExTPM', 'Brain - Amygdala_GTExTPM',
+       'Heart - Atrial Appendage_GTExTPM', 'Spleen_GTExTPM', 'Ovary_GTExTPM',
+       'Whole Blood_GTExTPM', 'Cells - Cultured fibroblasts_GTExTPM',
+       'Kidney - Cortex_GTExTPM'],
+      dtype='object')
+GBR Nested CV results for all scores: 
+ {'fit_time': array([105.20174456, 101.03947043,  94.07256746, 109.88208532,
+        96.49294949,  99.36334205,  99.57524204, 108.25290871,
+       101.4795866 , 109.7552166 , 113.46486092,  97.5261817 ,
+       100.90550232, 102.88468623, 106.34995151]), 'score_time': array([0.00303292, 0.00308514, 0.00297999, 0.0030334 , 0.00303721,
+       0.00309706, 0.00298762, 0.00306773, 0.00299525, 0.00307202,
+       0.00307965, 0.00309086, 0.00306153, 0.003021  , 0.00302744]), 'test_r2': array([0.29221003, 0.59072278, 0.80255766, 0.70160742, 0.73512304,
+       0.78774976, 0.62744642, 0.73117232, 0.57866333, 0.60200362,
+       0.47948021, 0.76210291, 0.85961467, 0.40951641, 0.74741578]), 'test_neg_mean_squared_error': array([-0.01849549, -0.01048969, -0.00760489, -0.00948189, -0.00921376,
+       -0.00723895, -0.01452321, -0.00677908, -0.01262498, -0.01105373,
+       -0.01654032, -0.00688953, -0.00540723, -0.01543012, -0.0079422 ]), 'test_max_error': array([-0.69596278, -0.59046216, -0.49615496, -0.62984924, -0.57895292,
+       -0.61638665, -0.65197892, -0.62279037, -0.6388164 , -0.64889886,
+       -0.64380921, -0.56300569, -0.42007685, -0.64343466, -0.58255774]), 'test_neg_mean_absolute_error': array([-0.05595455, -0.04554145, -0.0446368 , -0.04503642, -0.04420865,
+       -0.0356683 , -0.0483125 , -0.03575969, -0.05430807, -0.05194907,
+       -0.060845  , -0.03425308, -0.03477953, -0.04834041, -0.04189025]), 'test_explained_variance': array([0.33518152, 0.59166874, 0.80310091, 0.70162545, 0.73617338,
+       0.78799514, 0.63360154, 0.73903624, 0.58298406, 0.60406635,
+       0.48228555, 0.76224699, 0.86034756, 0.41041169, 0.74746797]), 'test_neg_root_mean_squared_error': array([-0.13599812, -0.1024192 , -0.08720604, -0.09737498, -0.09598834,
+       -0.08508203, -0.12051227, -0.08233517, -0.11236095, -0.10513671,
+       -0.12860919, -0.08300317, -0.07353384, -0.12421802, -0.08911899]), 'test_neg_median_absolute_error': array([-0.01227841, -0.01070193, -0.0157774 , -0.01278013, -0.01226001,
+       -0.00806684, -0.01037834, -0.00774335, -0.01617541, -0.01687001,
+       -0.01704825, -0.00787354, -0.00693786, -0.00970944, -0.01467695])} 
+
+GBR r2 Nested CV Median 0.7016074192897017
+GBR MSE Nested CV Median -0.009481887306795975
+GBR RMSE Nested CV Median -0.09737498296172367
+GBR Explained Variance Nested CV Median 0.7016254469487483
+GBR MAE Nested CV Median -0.04503642075594745
+
+
+Best Parameters: 
+OrderedDict([('criterion', 'friedman_mse'), ('learning_rate', 0.1093170713412033), ('max_depth', 4), ('max_features', 'sqrt'), ('n_estimators', 50)])
+
+Best Estimator: GradientBoostingRegressor(learning_rate=0.1093170713412033, max_depth=4,
+                          max_features='sqrt', n_estimators=50, random_state=0)
+
+
+Non-nested CV Results:
+GBR Train r2: 0.9717416554641995 Test r2: 0.5687931008505316
+GBR Train MSE: 0.0009242507021942154 Test MSE: 0.011268006370853458
+GBR Train Explained Variance Score: 0.9717416554641995 Test Explained Variance Score: 0.5836207261200743
+GBR Train MAE: 0.0160324175785646 Test MAE: 0.044359497792736104
+GBR Train Max Error: 0.2959359039467174 Test Max Error: 0.6400219493090081
+
+
+GBR Best model predicted r2: 0.9378118227748686
+GBR SELECTED FEATURES Ranked SHAP Importance: Index(['Testis_GTExTPM', 'humanScore_Exomiser', 'pLI_ExAC', 'Liver_GTExTPM',
+       'Pituitary_GTExTPM', 'Small Intestine - Terminal Ileum_GTExTPM',
+       'Lung_GTExTPM', 'GDI_Score', 'Adrenal Gland_GTExTPM',
+       'Brain - Amygdala_GTExTPM', 'Ovary_GTExTPM',
+       'Heart - Atrial Appendage_GTExTPM', 'HIPred',
+       'Cells - Cultured fibroblasts_GTExTPM', 'Spleen_GTExTPM',
+       'Whole Blood_GTExTPM', 'Kidney - Cortex_GTExTPM'],
+      dtype='object')
+RFR Nested CV results for all scores: 
+ {'fit_time': array([101.6842711 , 102.81490374, 102.218714  , 109.06593895,
+       112.17990518, 105.27800989,  99.56257534, 100.62737918,
+       103.25131893, 117.9214766 ,  98.85765076,  99.23312831,
+       108.31364036, 103.98358154, 102.63887429]), 'score_time': array([0.00601792, 0.00606871, 0.0059967 , 0.00548816, 0.00599241,
+       0.00529099, 0.00517249, 0.00597215, 0.0058403 , 0.00606823,
+       0.00589299, 0.00570536, 0.00580502, 0.00598526, 0.00548005]), 'test_r2': array([0.44047332, 0.53969279, 0.72660568, 0.67892338, 0.66979672,
+       0.70812931, 0.55695889, 0.64857636, 0.59994603, 0.60005047,
+       0.55641585, 0.70217006, 0.78370641, 0.35986335, 0.7161916 ]), 'test_neg_mean_squared_error': array([-0.01462117, -0.01179758, -0.01053034, -0.01020271, -0.01148614,
+       -0.00995447, -0.01727101, -0.00886192, -0.01198727, -0.01110797,
+       -0.01409557, -0.00862519, -0.00833099, -0.01672762, -0.008924  ]), 'test_max_error': array([-0.64630296, -0.61624984, -0.59181222, -0.64369032, -0.63862201,
+       -0.57684717, -0.63797754, -0.62988075, -0.58169453, -0.64347869,
+       -0.63679163, -0.63177788, -0.5206985 , -0.64598124, -0.62170905]), 'test_neg_mean_absolute_error': array([-0.04707681, -0.04384636, -0.0462697 , -0.04165753, -0.04591786,
+       -0.04052119, -0.05082759, -0.03967629, -0.0463401 , -0.04653802,
+       -0.04895247, -0.03642611, -0.04024329, -0.05306955, -0.0412883 ]), 'test_explained_variance': array([0.45301342, 0.53981745, 0.72661352, 0.67903799, 0.66980578,
+       0.70912824, 0.56329034, 0.66312148, 0.60251823, 0.60684374,
+       0.55754912, 0.70266012, 0.78449681, 0.3598829 , 0.71768755]), 'test_neg_root_mean_squared_error': array([-0.12091804, -0.10861667, -0.10261744, -0.10100845, -0.10717341,
+       -0.09977208, -0.13141923, -0.09413777, -0.10948637, -0.10539437,
+       -0.11872479, -0.09287189, -0.09127424, -0.12933529, -0.09446693]), 'test_neg_median_absolute_error': array([-0.00447893, -0.00565892, -0.00934089, -0.00612533, -0.0046414 ,
+       -0.00933105, -0.00589915, -0.00532381, -0.00727577, -0.00497737,
+       -0.00701902, -0.00494777, -0.00529463, -0.01045499, -0.00731065])} 
+
+RFR r2 Nested CV Median 0.6485763629689781
+RFR MSE Nested CV Median -0.011107973351984508
+RFR RMSE Nested CV Median -0.10539437058963115
+RFR Explained Variance Nested CV Median 0.6631214795448783
+RFR MAE Nested CV Median -0.04591785591722465
+
+
+Best Parameters: 
+OrderedDict([('criterion', 'mse'), ('max_depth', 4), ('max_features', 'log2'), ('n_estimators', 50)])
+
+Best Estimator: RandomForestRegressor(criterion='mse', max_depth=4, max_features='log2',
+                      n_estimators=50, random_state=0)
+
+
+Non-nested CV Results:
+RFR Train r2: 0.7836628584819627 Test r2: 0.4062120419806857
+RFR Train MSE: 0.007075777376322203 Test MSE: 0.015516464386573923
+RFR Train Explained Variance Score: 0.783806064373541 Test Explained Variance Score: 0.42177563380786565
+RFR Train MAE: 0.033827371146744355 Test MAE: 0.05095179677607745
+RFR Train Max Error: 0.5984324448955637 Test Max Error: 0.6401576765188834
+
+
+RFR Best model predicted r2: 0.7060104802480898
+RFR SELECTED FEATURES Ranked SHAP Importance: Index(['Testis_GTExTPM', 'Small Intestine - Terminal Ileum_GTExTPM',
+       'Brain - Amygdala_GTExTPM', 'Pituitary_GTExTPM',
+       'Adrenal Gland_GTExTPM', 'humanScore_Exomiser', 'Whole Blood_GTExTPM',
+       'Liver_GTExTPM', 'Ovary_GTExTPM', 'Lung_GTExTPM', 'pLI_ExAC',
+       'Spleen_GTExTPM', 'Kidney - Cortex_GTExTPM', 'GDI_Score',
+       'Cells - Cultured fibroblasts_GTExTPM',
+       'Heart - Atrial Appendage_GTExTPM', 'HIPred'],
+      dtype='object')
+DT Nested CV results for all scores: 
+ {'fit_time': array([59.78847814, 42.78824043, 47.73363137, 48.32838893, 46.89619541,
+       54.54088354, 48.7938273 , 65.51037192, 53.55600381, 57.46017671,
+       52.38973427, 57.1481626 , 59.04504943, 51.52729368, 51.88717365]), 'score_time': array([0.00265336, 0.00265646, 0.00264215, 0.00268507, 0.00270677,
+       0.00271225, 0.00272322, 0.00264025, 0.00271893, 0.0026722 ,
+       0.00265241, 0.00267053, 0.00262547, 0.00263214, 0.00270271]), 'test_r2': array([0.02614732, 0.3246056 , 0.64650802, 0.51808079, 0.57287879,
+       0.39117137, 0.330367  , 0.61597444, 0.36477154, 0.66804492,
+       0.37012047, 0.60912515, 0.68635796, 0.06502569, 0.46827593]), 'test_neg_mean_squared_error': array([-0.02544806, -0.01731022, -0.01361546, -0.01531373, -0.01485744,
+       -0.02076455, -0.02610422, -0.00968405, -0.01903406, -0.00921953,
+       -0.0200154 , -0.01131978, -0.01208056, -0.02443211, -0.0167194 ]), 'test_max_error': array([-0.65419223, -0.65      , -0.65868056, -0.65576923, -0.65      ,
+       -0.66666667, -0.65021413, -0.65      , -0.65      , -0.64760274,
+       -0.6554    , -0.65427632, -0.65315682, -0.65      , -0.65497967]), 'test_neg_mean_absolute_error': array([-0.05554204, -0.04737355, -0.04689247, -0.04714193, -0.03975431,
+       -0.05413569, -0.04977213, -0.03041831, -0.04903933, -0.03207207,
+       -0.05591871, -0.03885662, -0.03847804, -0.04974636, -0.04569729]), 'test_explained_variance': array([0.04609114, 0.32464633, 0.64659712, 0.51811889, 0.57436796,
+       0.39783566, 0.34318842, 0.61905775, 0.36694382, 0.66805533,
+       0.37114407, 0.60918686, 0.68639651, 0.07380814, 0.47079629]), 'test_neg_root_mean_squared_error': array([-0.15952447, -0.13156832, -0.11668531, -0.12374866, -0.12189108,
+       -0.14409911, -0.16156799, -0.09840756, -0.13796399, -0.0960184 ,
+       -0.14147579, -0.10639445, -0.1099116 , -0.15630776, -0.12930351]), 'test_neg_median_absolute_error': array([-0.00419223, -0.00120087, -0.00868056, -0.00576923, -0.00098684,
+       -0.00592105, -0.00021413, -0.00317287, -0.00060827, -0.00239726,
+       -0.0054    , -0.00427632, -0.00315682, -0.00334101, -0.00497967])} 
+
+DT r2 Nested CV Median 0.46827592547461583
+DT MSE Nested CV Median -0.01671939886835755
+DT RMSE Nested CV Median -0.12930351452438388
+DT Explained Variance Nested CV Median 0.47079628569520915
+DT MAE Nested CV Median -0.047141927041184785
+
+
+Best Parameters: 
+OrderedDict([('criterion', 'mse'), ('max_depth', 3), ('max_features', 'auto')])
+
+Best Estimator: DecisionTreeRegressor(criterion='mse', max_depth=3, max_features='auto',
+                      random_state=0)
+
+
+Non-nested CV Results:
+DT Train r2: 0.6141663051056769 Test r2: 0.02614731757646449
+DT Train MSE: 0.01261953130285043 Test MSE: 0.02544805811656888
+DT Train Explained Variance Score: 0.6141663051056767 Test Explained Variance Score: 0.0460911394498128
+DT Train MAE: 0.03954943244738922 Test MAE: 0.05554204332565514
+DT Train Max Error: 0.6541922290388548 Test Max Error: 0.6541922290388548
+
+
+DT Best model predicted r2: 0.5250146829996762
+DT SELECTED FEATURES Ranked SHAP Importance: Index(['Pituitary_GTExTPM', 'Testis_GTExTPM', 'Liver_GTExTPM', 'GDI_Score',
+       'HIPred', 'Heart - Atrial Appendage_GTExTPM', 'Adrenal Gland_GTExTPM',
+       'humanScore_Exomiser', 'pLI_ExAC', 'Brain - Amygdala_GTExTPM',
+       'Lung_GTExTPM', 'Whole Blood_GTExTPM', 'Ovary_GTExTPM',
+       'Spleen_GTExTPM', 'Kidney - Cortex_GTExTPM',
+       'Small Intestine - Terminal Ileum_GTExTPM',
+       'Cells - Cultured fibroblasts_GTExTPM'],
+      dtype='object')
+ExtraTrees Nested CV results for all scores: 
+ {'fit_time': array([89.7662077 , 90.84399438, 81.38999081, 86.51074862, 84.51655245,
+       86.1366353 , 82.73923874, 93.36638379, 91.72834635, 87.24389505,
+       89.05960536, 90.21871567, 85.28634143, 88.4712553 , 80.72660613]), 'score_time': array([0.00580311, 0.00589466, 0.00572324, 0.00572109, 0.00596786,
+       0.00585604, 0.00584006, 0.00593233, 0.00596333, 0.00577712,
+       0.00572777, 0.00592971, 0.00612259, 0.00592756, 0.00571132]), 'test_r2': array([0.46868805, 0.39488782, 0.48861165, 0.45513608, 0.31824294,
+       0.47354222, 0.39525336, 0.46642112, 0.38796842, 0.43149342,
+       0.43923782, 0.43379183, 0.45950725, 0.3379042 , 0.39304554]), 'test_neg_mean_squared_error': array([-0.01388388, -0.0155089 , -0.01969716, -0.0173139 , -0.02371496,
+       -0.01795523, -0.02357476, -0.01345536, -0.01833899, -0.01578938,
+       -0.01781909, -0.01639745, -0.02081818, -0.01730144, -0.01908492]), 'test_max_error': array([-0.50654569, -0.59667972, -0.60179989, -0.58397716, -0.61195611,
+       -0.59567769, -0.60328338, -0.50824404, -0.61376717, -0.58437116,
+       -0.60223347, -0.59969106, -0.59298502, -0.60856602, -0.57485065]), 'test_neg_mean_absolute_error': array([-0.069561  , -0.06586429, -0.07334959, -0.06987703, -0.07878651,
+       -0.07024093, -0.07990366, -0.06516613, -0.0738889 , -0.06693479,
+       -0.06936596, -0.06723051, -0.07820959, -0.06813083, -0.07233611]), 'test_explained_variance': array([0.47929609, 0.39502738, 0.4923194 , 0.45557987, 0.31926011,
+       0.47583652, 0.39995199, 0.47457976, 0.39289155, 0.43214135,
+       0.43930458, 0.43426651, 0.46225285, 0.33886827, 0.39320301]), 'test_neg_root_mean_squared_error': array([-0.11782989, -0.12453475, -0.14034658, -0.13158228, -0.15399662,
+       -0.13399714, -0.15354074, -0.11599726, -0.13542152, -0.12565581,
+       -0.13348816, -0.12805253, -0.14428505, -0.13153493, -0.1381482 ]), 'test_neg_median_absolute_error': array([-0.03676978, -0.03550996, -0.03310536, -0.03411249, -0.03328855,
+       -0.03720371, -0.03357255, -0.03619081, -0.03095914, -0.0329341 ,
+       -0.03196038, -0.03401336, -0.03578507, -0.03473733, -0.03459912])} 
+
+ExtraTrees r2 Nested CV Median 0.4337918312790575
+ExtraTrees MSE Nested CV Median -0.017819088341902625
+ExtraTrees RMSE Nested CV Median -0.13348815805869307
+ExtraTrees Explained Variance Nested CV Median 0.4342665077600526
+ExtraTrees MAE Nested CV Median -0.0698770305106682
+
+
+Best Parameters: 
+OrderedDict([('criterion', 'mse'), ('max_depth', 4), ('max_features', 'auto'), ('n_estimators', 44)])
+
+Best Estimator: ExtraTreesRegressor(criterion='mse', max_depth=4, n_estimators=44,
+                    random_state=0)
+
+
+Non-nested CV Results:
+ExtraTrees Train r2: 0.5031876212627875 Test r2: 0.46710400224919657
+ExtraTrees Train MSE: 0.016249330859594877 Test MSE: 0.013925276959859064
+ExtraTrees Train Explained Variance Score: 0.5031876212627873 Test Explained Variance Score: 0.4779918058023608
+ExtraTrees Train MAE: 0.06875868588707393 Test MAE: 0.0699028183606542
+ExtraTrees Train Max Error: 0.6037695896340016 Test Max Error: 0.5063773291743421
+
+
+ExtraTrees Best model predicted r2: 0.44317197033541356
+ExtraTrees SELECTED FEATURES Ranked SHAP Importance: Index(['pLI_ExAC', 'humanScore_Exomiser', 'HIPred', 'Testis_GTExTPM',
+       'GDI_Score', 'Pituitary_GTExTPM',
+       'Small Intestine - Terminal Ileum_GTExTPM', 'Kidney - Cortex_GTExTPM',
+       'Spleen_GTExTPM', 'Liver_GTExTPM', 'Whole Blood_GTExTPM',
+       'Heart - Atrial Appendage_GTExTPM',
+       'Cells - Cultured fibroblasts_GTExTPM', 'Adrenal Gland_GTExTPM',
+       'Lung_GTExTPM', 'Brain - Amygdala_GTExTPM', 'Ovary_GTExTPM'],
+      dtype='object')
+All r2 results: [array([0.35353588, 0.57997559, 0.80644715, 0.76709509, 0.71533697,
+       0.80661277, 0.60070088, 0.70760509, 0.59393041, 0.57465339,
+       0.5626596 , 0.7743826 , 0.8376769 , 0.47120767, 0.73416131]), array([0.43703152, 0.52730256, 0.80764369, 0.7640932 , 0.73084174,
+       0.76909303, 0.62503375, 0.66036987, 0.53006095, 0.60165242,
+       0.53240783, 0.74492459, 0.81037528, 0.50788282, 0.72603417]), array([0.46280732, 0.55114093, 0.80082804, 0.78833073, 0.74235368,
+       0.74432587, 0.64299832, 0.67396789, 0.62469022, 0.63800974,
+       0.54165027, 0.74054541, 0.84598889, 0.43895802, 0.71307765]), array([0.29221003, 0.59072278, 0.80255766, 0.70160742, 0.73512304,
+       0.78774976, 0.62744642, 0.73117232, 0.57866333, 0.60200362,
+       0.47948021, 0.76210291, 0.85961467, 0.40951641, 0.74741578]), array([0.44047332, 0.53969279, 0.72660568, 0.67892338, 0.66979672,
+       0.70812931, 0.55695889, 0.64857636, 0.59994603, 0.60005047,
+       0.55641585, 0.70217006, 0.78370641, 0.35986335, 0.7161916 ]), array([0.02614732, 0.3246056 , 0.64650802, 0.51808079, 0.57287879,
+       0.39117137, 0.330367  , 0.61597444, 0.36477154, 0.66804492,
+       0.37012047, 0.60912515, 0.68635796, 0.06502569, 0.46827593]), array([0.46868805, 0.39488782, 0.48861165, 0.45513608, 0.31824294,
+       0.47354222, 0.39525336, 0.46642112, 0.38796842, 0.43149342,
+       0.43923782, 0.43379183, 0.45950725, 0.3379042 , 0.39304554])]
+
+
+KNR Nested CV results for all scores: 
+ {'fit_time': array([45.45217419, 45.48071146, 45.85815668, 45.42156219, 45.61384392,
+       45.75359201, 46.0200386 , 45.35522795, 45.73766327, 45.52017879,
+       45.32751322, 45.09224606, 45.342134  , 45.76573896, 44.91918778]), 'score_time': array([0.00423765, 0.00398588, 0.00386834, 0.00409508, 0.00406218,
+       0.00383711, 0.00397706, 0.0038743 , 0.00395656, 0.00388813,
+       0.00391269, 0.00399685, 0.0040164 , 0.00398135, 0.00404382]), 'estimator': [BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=KNeighborsRegressor(), iid=False, random_state=0,
+              search_spaces={'metric': ['euclidean', 'manhattan'],
+                             'n_neighbors': [7, 9, 11, 13, 15, 17],
+                             'weights': ['uniform', 'distance']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=KNeighborsRegressor(), iid=False, random_state=0,
+              search_spaces={'metric': ['euclidean', 'manhattan'],
+                             'n_neighbors': [7, 9, 11, 13, 15, 17],
+                             'weights': ['uniform', 'distance']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=KNeighborsRegressor(), iid=False, random_state=0,
+              search_spaces={'metric': ['euclidean', 'manhattan'],
+                             'n_neighbors': [7, 9, 11, 13, 15, 17],
+                             'weights': ['uniform', 'distance']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=KNeighborsRegressor(), iid=False, random_state=0,
+              search_spaces={'metric': ['euclidean', 'manhattan'],
+                             'n_neighbors': [7, 9, 11, 13, 15, 17],
+                             'weights': ['uniform', 'distance']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=KNeighborsRegressor(), iid=False, random_state=0,
+              search_spaces={'metric': ['euclidean', 'manhattan'],
+                             'n_neighbors': [7, 9, 11, 13, 15, 17],
+                             'weights': ['uniform', 'distance']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=KNeighborsRegressor(), iid=False, random_state=0,
+              search_spaces={'metric': ['euclidean', 'manhattan'],
+                             'n_neighbors': [7, 9, 11, 13, 15, 17],
+                             'weights': ['uniform', 'distance']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=KNeighborsRegressor(), iid=False, random_state=0,
+              search_spaces={'metric': ['euclidean', 'manhattan'],
+                             'n_neighbors': [7, 9, 11, 13, 15, 17],
+                             'weights': ['uniform', 'distance']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=KNeighborsRegressor(), iid=False, random_state=0,
+              search_spaces={'metric': ['euclidean', 'manhattan'],
+                             'n_neighbors': [7, 9, 11, 13, 15, 17],
+                             'weights': ['uniform', 'distance']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=KNeighborsRegressor(), iid=False, random_state=0,
+              search_spaces={'metric': ['euclidean', 'manhattan'],
+                             'n_neighbors': [7, 9, 11, 13, 15, 17],
+                             'weights': ['uniform', 'distance']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=KNeighborsRegressor(), iid=False, random_state=0,
+              search_spaces={'metric': ['euclidean', 'manhattan'],
+                             'n_neighbors': [7, 9, 11, 13, 15, 17],
+                             'weights': ['uniform', 'distance']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=KNeighborsRegressor(), iid=False, random_state=0,
+              search_spaces={'metric': ['euclidean', 'manhattan'],
+                             'n_neighbors': [7, 9, 11, 13, 15, 17],
+                             'weights': ['uniform', 'distance']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=KNeighborsRegressor(), iid=False, random_state=0,
+              search_spaces={'metric': ['euclidean', 'manhattan'],
+                             'n_neighbors': [7, 9, 11, 13, 15, 17],
+                             'weights': ['uniform', 'distance']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=KNeighborsRegressor(), iid=False, random_state=0,
+              search_spaces={'metric': ['euclidean', 'manhattan'],
+                             'n_neighbors': [7, 9, 11, 13, 15, 17],
+                             'weights': ['uniform', 'distance']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=KNeighborsRegressor(), iid=False, random_state=0,
+              search_spaces={'metric': ['euclidean', 'manhattan'],
+                             'n_neighbors': [7, 9, 11, 13, 15, 17],
+                             'weights': ['uniform', 'distance']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=KNeighborsRegressor(), iid=False, random_state=0,
+              search_spaces={'metric': ['euclidean', 'manhattan'],
+                             'n_neighbors': [7, 9, 11, 13, 15, 17],
+                             'weights': ['uniform', 'distance']})], 'test_r2': array([0.37890688, 0.49667644, 0.6950512 , 0.66597303, 0.58686736,
+       0.58273592, 0.56742556, 0.55743716, 0.55029863, 0.52458146,
+       0.70313734, 0.51303957, 0.74625893, 0.32413173, 0.5394147 ]), 'train_r2': array([1.        , 0.98199138, 0.98000889, 0.98134293, 0.98091662,
+       0.98071828, 0.98012183, 1.        , 0.98118307, 0.98192621,
+       0.98075989, 0.98203683, 0.9802557 , 1.        , 0.98171195]), 'test_neg_mean_squared_error': array([-0.01622998, -0.01290008, -0.01174572, -0.01061423, -0.01437084,
+       -0.0142311 , -0.01686299, -0.0111602 , -0.01347491, -0.01320401,
+       -0.00943327, -0.01410243, -0.00977335, -0.01766133, -0.01448253]), 'train_neg_mean_squared_error': array([-0.        , -0.00059137, -0.00059137, -0.00058407, -0.00058316,
+       -0.00059137, -0.00058407, -0.        , -0.00059734, -0.00058316,
+       -0.00060232, -0.00057494, -0.00058407, -0.        , -0.00057405]), 'test_max_error': array([-0.65      , -0.61437285, -0.65      , -0.65      , -0.65      ,
+       -0.61971048, -0.65      , -0.65      , -0.65      , -0.59779003,
+       -0.50999477, -0.65      , -0.48227867, -0.65      , -0.65      ]), 'train_max_error': array([-0.        , -0.585     , -0.585     , -0.57777778, -0.57777778,
+       -0.585     , -0.57777778, -0.        , -0.59090909, -0.57777778,
+       -0.59583333, -0.56875   , -0.57777778, -0.        , -0.56875   ]), 'test_neg_mean_absolute_error': array([-0.04857691, -0.04721383, -0.04345419, -0.0421468 , -0.04492496,
+       -0.04534206, -0.05460422, -0.04068991, -0.04549263, -0.04849604,
+       -0.03598817, -0.047375  , -0.04193089, -0.04666008, -0.0537968 ]), 'train_neg_mean_absolute_error': array([-0.        , -0.0018196 , -0.0018196 , -0.00179713, -0.00179434,
+       -0.0018196 , -0.00179713, -0.        , -0.00183798, -0.00179434,
+       -0.00185329, -0.00176905, -0.00179713, -0.        , -0.0017663 ]), 'test_explained_variance': array([0.39122641, 0.5039727 , 0.69509201, 0.67263733, 0.58773315,
+       0.58334073, 0.56751728, 0.57776889, 0.55977122, 0.53135612,
+       0.70325286, 0.52476704, 0.74904285, 0.32435281, 0.54725876]), 'train_explained_variance': array([1.        , 0.98199138, 0.98000889, 0.98134293, 0.98091662,
+       0.98071828, 0.98012183, 1.        , 0.98118307, 0.98192621,
+       0.98075989, 0.98203683, 0.9802557 , 1.        , 0.98171195]), 'test_neg_root_mean_squared_error': array([-0.12739696, -0.11357852, -0.10837769, -0.10302536, -0.11987845,
+       -0.11929418, -0.12985759, -0.10564182, -0.11608147, -0.11490869,
+       -0.09712503, -0.11875364, -0.09886027, -0.13289594, -0.12034338]), 'train_neg_root_mean_squared_error': array([-0.        , -0.02431807, -0.02431807, -0.02416749, -0.02414872,
+       -0.02431807, -0.02416749, -0.        , -0.02444058, -0.02414872,
+       -0.02454221, -0.02397794, -0.02416749, -0.        , -0.02395932]), 'test_neg_median_absolute_error': array([-1.11022302e-16, -1.11022302e-16, -1.11022302e-16, -1.11022302e-16,
+       -1.11022302e-16, -1.11022302e-16, -1.11022302e-16, -1.11022302e-16,
+       -1.11022302e-16, -1.11022302e-16, -1.11022302e-16, -1.11022302e-16,
+       -1.11022302e-16, -1.11022302e-16, -1.11022302e-16]), 'train_neg_median_absolute_error': array([-0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0., -0.,
+       -0., -0.])} 
+
+KNR r2 Nested CV Median 0.5574371564792513
+KNR MSE Nested CV Median -0.013474906671939024
+KNR RMSE Nested CV Median -0.11608146566932649
+KNR Explained Variance Nested CV Median 0.5675172783505119
+KNR MAE Nested CV Median -0.04549262738800474
+
+
+Best Parameters: 
+OrderedDict([('metric', 'manhattan'), ('n_neighbors', 17), ('weights', 'distance')])
+
+Best Estimator: KNeighborsRegressor(metric='manhattan', n_neighbors=17, weights='distance')
+
+
+Non-nested CV Results:
+KNR Train r2: 1.0 Test r2: 0.3789068752130691
+KNR Train MSE: 0.0 Test MSE: 0.016229984494210398
+KNR Train Explained Variance Score: 1.0 Test Explained Variance Score: 0.39122640950482934
+KNR Train MAE: 0.0 Test MAE: 0.04857690923148924
+KNR Train Max Error: 0.0 Test Max Error: 0.65
+
+
+KNR Best model predicted r2: 0.9846050034077587
+
+
+
+
+SVR Nested CV results for all scores: 
+ {'fit_time': array([50.42552567, 44.06937099, 45.82641768, 46.88902926, 47.69569111,
+       44.92835975, 45.94947696, 48.07769203, 46.64927506, 45.06230903,
+       46.59547615, 47.51048279, 51.78687596, 52.33709645, 51.89964247]), 'score_time': array([0.00349188, 0.00334096, 0.00325847, 0.00340366, 0.00344038,
+       0.00303054, 0.0033505 , 0.00338173, 0.00345206, 0.00315309,
+       0.00300384, 0.00370932, 0.00347686, 0.00359416, 0.00363898]), 'estimator': [BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=SVR(), iid=False, random_state=0,
+              search_spaces={'C': (1.0, 1000.0), 'gamma': (0.0001, 0.001),
+                             'kernel': ['rbf']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=SVR(), iid=False, random_state=0,
+              search_spaces={'C': (1.0, 1000.0), 'gamma': (0.0001, 0.001),
+                             'kernel': ['rbf']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=SVR(), iid=False, random_state=0,
+              search_spaces={'C': (1.0, 1000.0), 'gamma': (0.0001, 0.001),
+                             'kernel': ['rbf']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=SVR(), iid=False, random_state=0,
+              search_spaces={'C': (1.0, 1000.0), 'gamma': (0.0001, 0.001),
+                             'kernel': ['rbf']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=SVR(), iid=False, random_state=0,
+              search_spaces={'C': (1.0, 1000.0), 'gamma': (0.0001, 0.001),
+                             'kernel': ['rbf']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=SVR(), iid=False, random_state=0,
+              search_spaces={'C': (1.0, 1000.0), 'gamma': (0.0001, 0.001),
+                             'kernel': ['rbf']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=SVR(), iid=False, random_state=0,
+              search_spaces={'C': (1.0, 1000.0), 'gamma': (0.0001, 0.001),
+                             'kernel': ['rbf']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=SVR(), iid=False, random_state=0,
+              search_spaces={'C': (1.0, 1000.0), 'gamma': (0.0001, 0.001),
+                             'kernel': ['rbf']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=SVR(), iid=False, random_state=0,
+              search_spaces={'C': (1.0, 1000.0), 'gamma': (0.0001, 0.001),
+                             'kernel': ['rbf']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=SVR(), iid=False, random_state=0,
+              search_spaces={'C': (1.0, 1000.0), 'gamma': (0.0001, 0.001),
+                             'kernel': ['rbf']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=SVR(), iid=False, random_state=0,
+              search_spaces={'C': (1.0, 1000.0), 'gamma': (0.0001, 0.001),
+                             'kernel': ['rbf']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=SVR(), iid=False, random_state=0,
+              search_spaces={'C': (1.0, 1000.0), 'gamma': (0.0001, 0.001),
+                             'kernel': ['rbf']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=SVR(), iid=False, random_state=0,
+              search_spaces={'C': (1.0, 1000.0), 'gamma': (0.0001, 0.001),
+                             'kernel': ['rbf']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=SVR(), iid=False, random_state=0,
+              search_spaces={'C': (1.0, 1000.0), 'gamma': (0.0001, 0.001),
+                             'kernel': ['rbf']}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=SVR(), iid=False, random_state=0,
+              search_spaces={'C': (1.0, 1000.0), 'gamma': (0.0001, 0.001),
+                             'kernel': ['rbf']})], 'test_r2': array([-0.05992584, -0.08108783,  0.03834884,  0.01074273,  0.0292208 ,
+       -0.00920538,  0.00194915, -0.03598069, -0.01332917,  0.00451877,
+        0.00176085, -0.04145894,  0.05065732, -0.07600513,  0.01027225]), 'train_r2': array([ 0.01176906,  0.00698564, -0.01495499, -0.00462915, -0.01149375,
+       -0.00650685, -0.00632512,  0.00420158,  0.00050315, -0.00898512,
+       -0.00882528,  0.00594348, -0.01767489,  0.01458153, -0.00557326]), 'test_neg_mean_squared_error': array([-0.02769726, -0.02770806, -0.03703995, -0.03143518, -0.03376861,
+       -0.0344197 , -0.03890689, -0.02612453, -0.03036352, -0.02764794,
+       -0.0317206 , -0.03016077, -0.03656586, -0.02811744, -0.03112075]), 'train_neg_mean_squared_error': array([-0.03232225, -0.03260869, -0.03002397, -0.03145035, -0.0309098 ,
+       -0.03086948, -0.02956821, -0.03274015, -0.03172896, -0.03255547,
+       -0.03158171, -0.03181646, -0.03010443, -0.03223026, -0.03156423]), 'test_max_error': array([-0.59046601, -0.60228745, -0.5577467 , -0.57165726, -0.57443421,
+       -0.58591822, -0.6022665 , -0.55718859, -0.57106781, -0.55456288,
+       -0.56863878, -0.57253106, -0.55703196, -0.60052666, -0.5533582 ]), 'train_max_error': array([-0.60173583, -0.58976546, -0.60144057, -0.59929167, -0.59977359,
+       -0.59648936, -0.59013551, -0.59968111, -0.5987318 , -0.59307326,
+       -0.59322379, -0.60227914, -0.59990439, -0.57300426, -0.6013587 ]), 'test_neg_mean_absolute_error': array([-0.11983249, -0.11941166, -0.13368559, -0.12667689, -0.13042705,
+       -0.12497003, -0.13753471, -0.11943625, -0.12596861, -0.11751053,
+       -0.12710972, -0.12503554, -0.13222118, -0.11984301, -0.12560491]), 'train_neg_mean_absolute_error': array([-0.12697613, -0.12840887, -0.12357384, -0.12511735, -0.12456574,
+       -0.12553665, -0.12286927, -0.12676733, -0.12514444, -0.12648711,
+       -0.12438637, -0.12638727, -0.12336344, -0.12701188, -0.12598027]), 'test_explained_variance': array([ 0.00040873, -0.04327531,  0.04305747,  0.05549704,  0.05122531,
+        0.00107211,  0.00740022,  0.05189929,  0.05143725,  0.05293087,
+        0.04878962,  0.00717783,  0.05681764, -0.02293062,  0.030181  ]), 'train_explained_variance': array([0.03355142, 0.03412412, 0.02270271, 0.02181525, 0.02067394,
+       0.03777325, 0.03072196, 0.02479913, 0.02594061, 0.02844018,
+       0.02882065, 0.02881827, 0.02184563, 0.03766306, 0.02479676]), 'test_neg_root_mean_squared_error': array([-0.16642495, -0.16645739, -0.19245766, -0.1772997 , -0.18376238,
+       -0.18552547, -0.19724829, -0.16163085, -0.17425131, -0.16627668,
+       -0.17810277, -0.17366855, -0.19122202, -0.16768255, -0.17641075]), 'train_neg_root_mean_squared_error': array([-0.17978388, -0.18057877, -0.17327427, -0.17734247, -0.17581184,
+       -0.17569712, -0.1719541 , -0.18094238, -0.17812624, -0.18043133,
+       -0.17771244, -0.17837169, -0.17350629, -0.17952787, -0.17766324]), 'test_neg_median_absolute_error': array([-0.09915099, -0.09963148, -0.09898553, -0.09911555, -0.09923842,
+       -0.09991489, -0.09900236, -0.09891871, -0.09936688, -0.09983771,
+       -0.09991563, -0.09914854, -0.09901001, -0.09876191, -0.09924564]), 'train_neg_median_absolute_error': array([-0.09892066, -0.09973277, -0.09900682, -0.09920365, -0.09930152,
+       -0.09993557, -0.09889587, -0.09912246, -0.09925901, -0.09980535,
+       -0.09991472, -0.09908788, -0.09903187, -0.09893057, -0.09914869])} 
+
+SVR r2 Nested CV Median 0.0017608507055353328
+SVR MSE Nested CV Median -0.031120751843634088
+SVR RMSE Nested CV Median -0.17641074752869818
+SVR Explained Variance Nested CV Median 0.043057466906084585
+SVR MAE Nested CV Median -0.12560490715333122
+
+
+Best Parameters: 
+OrderedDict([('C', 1000.0), ('gamma', 0.001), ('kernel', 'rbf')])
+
+Best Estimator: SVR(C=1000.0, gamma=0.001)
+
+
+Non-nested CV Results:
+SVR Train r2: 0.011832824011043241 Test r2: -0.059799111394083004
+SVR Train MSE: 0.03232015963058241 Test MSE: 0.027693951934832074
+SVR Train Explained Variance Score: 0.033653529246114866 Test Explained Variance Score: 0.0005580787243741892
+SVR Train MAE: 0.12694097188044173 Test MAE: 0.1198038978231146
+SVR Train Max Error: 0.6016455071281254 Test Max Error: 0.5904737614580992
+
+
+SVR Best model predicted r2: -0.0475967005037683
+
+
+
+
+Lasso Nested CV results for all scores: 
+ {'fit_time': array([32.36132812, 38.95548439, 32.64679384, 32.77104044, 32.43562675,
+       32.38451886, 32.38428044, 38.61392045, 32.13113356, 31.90543604,
+       38.64921188, 32.15489054, 31.73195195, 32.11830521, 31.92785311]), 'score_time': array([0.00172377, 0.00173259, 0.00173426, 0.00170588, 0.00170279,
+       0.00169945, 0.00172734, 0.0016706 , 0.00166583, 0.00168037,
+       0.00167298, 0.00167346, 0.00164461, 0.00166917, 0.00167704]), 'estimator': [BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=Lasso(random_state=0), iid=False, random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=Lasso(random_state=0), iid=False, random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=Lasso(random_state=0), iid=False, random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=Lasso(random_state=0), iid=False, random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=Lasso(random_state=0), iid=False, random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=Lasso(random_state=0), iid=False, random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=Lasso(random_state=0), iid=False, random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=Lasso(random_state=0), iid=False, random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=Lasso(random_state=0), iid=False, random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=Lasso(random_state=0), iid=False, random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=Lasso(random_state=0), iid=False, random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=Lasso(random_state=0), iid=False, random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=Lasso(random_state=0), iid=False, random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=Lasso(random_state=0), iid=False, random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=Lasso(random_state=0), iid=False, random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'max_iter': (500, 1000, 5000)})], 'test_r2': array([0.02022183, 0.01872604, 0.03934597, 0.05334215, 0.06047493,
+       0.0138713 , 0.01174608, 0.04980123, 0.04996703, 0.07240623,
+       0.04305234, 0.03944311, 0.03930878, 0.0234742 , 0.05469895]), 'train_r2': array([0.05154132, 0.05198097, 0.04684929, 0.04299956, 0.03853072,
+       0.05361931, 0.05366326, 0.04219061, 0.04363368, 0.03821815,
+       0.04708102, 0.04683582, 0.04600216, 0.05043613, 0.04310822]), 'test_neg_mean_squared_error': array([-0.0256029 , -0.02514985, -0.03700154, -0.03008152, -0.03268143,
+       -0.03363265, -0.03852498, -0.02396135, -0.0284669 , -0.02576247,
+       -0.0304085 , -0.02781783, -0.03700297, -0.02551791, -0.02972381]), 'train_neg_mean_squared_error': array([-0.03102141, -0.03113113, -0.0281957 , -0.02995931, -0.02938113,
+       -0.02902541, -0.02780561, -0.03149113, -0.03035978, -0.03103243,
+       -0.02983154, -0.03050763, -0.02822076, -0.03105755, -0.03003615]), 'test_max_error': array([-0.60171795, -0.62656703, -0.60870946, -0.59934795, -0.60904598,
+       -0.61386543, -0.63059037, -0.59677884, -0.5970675 , -0.60163713,
+       -0.60985542, -0.60043184, -0.60622694, -0.62602785, -0.59993611]), 'train_max_error': array([-0.62532544, -0.60927884, -0.62977169, -0.62346376, -0.62326216,
+       -0.63029307, -0.61409178, -0.62104224, -0.62213727, -0.62341034,
+       -0.62681453, -0.62363836, -0.62938051, -0.60619939, -0.62507725]), 'test_neg_mean_absolute_error': array([-0.0898911 , -0.08917693, -0.10424309, -0.09516826, -0.09868493,
+       -0.095747  , -0.10755403, -0.08966043, -0.09600366, -0.08723978,
+       -0.0966828 , -0.09304656, -0.10134242, -0.08978397, -0.09456316]), 'train_neg_mean_absolute_error': array([-0.09876904, -0.09919985, -0.08960145, -0.09434082, -0.09221235,
+       -0.09331129, -0.0895606 , -0.09873834, -0.09589183, -0.09675985,
+       -0.09417003, -0.09695908, -0.08934794, -0.0992027 , -0.09451585]), 'test_explained_variance': array([0.02378839, 0.01947098, 0.04574812, 0.05411642, 0.06075831,
+       0.02259051, 0.02107763, 0.06505826, 0.05541629, 0.07316751,
+       0.04324806, 0.04127933, 0.04533204, 0.02617911, 0.05494467]), 'train_explained_variance': array([0.05154132, 0.05198097, 0.04684929, 0.04299956, 0.03853072,
+       0.05361931, 0.05366326, 0.04219061, 0.04363368, 0.03821815,
+       0.04708102, 0.04683582, 0.04600216, 0.05043613, 0.04310822]), 'test_neg_root_mean_squared_error': array([-0.16000906, -0.15858705, -0.19235785, -0.17344026, -0.18078007,
+       -0.18339208, -0.1962778 , -0.15479454, -0.16872138, -0.16050691,
+       -0.17438032, -0.16678679, -0.19236157, -0.15974326, -0.17240595]), 'train_neg_root_mean_squared_error': array([-0.17612895, -0.17644017, -0.16791577, -0.17308759, -0.17140924,
+       -0.17036846, -0.16675015, -0.17745741, -0.17424059, -0.17616023,
+       -0.1727181 , -0.17466434, -0.16799037, -0.17623154, -0.17330941]), 'test_neg_median_absolute_error': array([-0.05654847, -0.0585419 , -0.05324616, -0.05219892, -0.05217853,
+       -0.04856184, -0.05622128, -0.05603184, -0.05829347, -0.0506697 ,
+       -0.05370843, -0.05466354, -0.04612483, -0.05689343, -0.05532866]), 'train_neg_median_absolute_error': array([-0.05519867, -0.05529477, -0.04859499, -0.05349044, -0.0527939 ,
+       -0.05196144, -0.04849861, -0.05620617, -0.05416996, -0.05601253,
+       -0.05170825, -0.05637966, -0.04815043, -0.05659126, -0.05295049])} 
+
+Lasso r2 Nested CV Median 0.03944311031578507
+Lasso MSE Nested CV Median -0.029723809945954704
+Lasso RMSE Nested CV Median -0.17240594521638372
+Lasso Explained Variance Nested CV Median 0.04533204121947998
+Lasso MAE Nested CV Median -0.09516825600379057
+
+
+Best Parameters: 
+OrderedDict([('alpha', 0.001), ('max_iter', 5000)])
+
+Best Estimator: Lasso(alpha=0.001, max_iter=5000, random_state=0)
+
+
+Non-nested CV Results:
+Lasso Train r2: 0.051541318974511974 Test r2: 0.020221829328709418
+Lasso Train MSE: 0.0310214068212462 Test MSE: 0.025602898958535507
+Lasso Train Explained Variance Score: 0.05154131897451175 Test Explained Variance Score: 0.023788393175671496
+Lasso Train MAE: 0.09876904269411227 Test MAE: 0.08989110010541908
+Lasso Train Max Error: 0.6253254428489265 Test Max Error: 0.6017179462622678
+
+
+Lasso Best model predicted r2: -0.007016078286925964
+
+
+
+
+ElasticNet Nested CV results for all scores: 
+ {'fit_time': array([40.66136289, 40.59595394, 42.06860232, 41.76183772, 40.03514338,
+       46.483109  , 40.869519  , 40.05737138, 39.78023791, 40.29903245,
+       39.91309094, 41.17366171, 39.40308166, 40.49766278, 39.6792078 ]), 'score_time': array([0.00166845, 0.00166368, 0.00166655, 0.00166702, 0.00172806,
+       0.00167871, 0.00178552, 0.00169802, 0.00178933, 0.00172663,
+       0.00179863, 0.00173521, 0.00177002, 0.00166535, 0.0017364 ]), 'estimator': [BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=ElasticNet(random_state=0, tol=1), iid=False,
+              random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'l1_ratio': array([0.]),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=ElasticNet(random_state=0, tol=1), iid=False,
+              random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'l1_ratio': array([0.]),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=ElasticNet(random_state=0, tol=1), iid=False,
+              random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'l1_ratio': array([0.]),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=ElasticNet(random_state=0, tol=1), iid=False,
+              random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'l1_ratio': array([0.]),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=ElasticNet(random_state=0, tol=1), iid=False,
+              random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'l1_ratio': array([0.]),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=ElasticNet(random_state=0, tol=1), iid=False,
+              random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'l1_ratio': array([0.]),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=ElasticNet(random_state=0, tol=1), iid=False,
+              random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'l1_ratio': array([0.]),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=ElasticNet(random_state=0, tol=1), iid=False,
+              random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'l1_ratio': array([0.]),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=ElasticNet(random_state=0, tol=1), iid=False,
+              random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'l1_ratio': array([0.]),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=ElasticNet(random_state=0, tol=1), iid=False,
+              random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'l1_ratio': array([0.]),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=ElasticNet(random_state=0, tol=1), iid=False,
+              random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'l1_ratio': array([0.]),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=ElasticNet(random_state=0, tol=1), iid=False,
+              random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'l1_ratio': array([0.]),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=ElasticNet(random_state=0, tol=1), iid=False,
+              random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'l1_ratio': array([0.]),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=ElasticNet(random_state=0, tol=1), iid=False,
+              random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'l1_ratio': array([0.]),
+                             'max_iter': (500, 1000, 5000)}), BayesSearchCV(cv=RepeatedKFold(n_repeats=3, n_splits=5, random_state=0),
+              estimator=ElasticNet(random_state=0, tol=1), iid=False,
+              random_state=0,
+              search_spaces={'alpha': (0.001, 0.01, 0.1),
+                             'l1_ratio': array([0.]),
+                             'max_iter': (500, 1000, 5000)})], 'test_r2': array([0.01931871, 0.00860326, 0.04776922, 0.06265551, 0.06633049,
+       0.01159022, 0.01259209, 0.05785098, 0.05961204, 0.08428904,
+       0.04588514, 0.04042944, 0.0401501 , 0.01780128, 0.05153408]), 'train_r2': array([0.06043766, 0.06220026, 0.0562507 , 0.05197364, 0.0482186 ,
+       0.06379054, 0.057977  , 0.04965594, 0.05201354, 0.04724691,
+       0.04926343, 0.05673519, 0.04979076, 0.06213737, 0.05372684]), 'test_neg_mean_squared_error': array([-0.0256265 , -0.0254093 , -0.0366771 , -0.02978558, -0.03247775,
+       -0.03371045, -0.038492  , -0.02375836, -0.0281779 , -0.02543244,
+       -0.03031848, -0.02778927, -0.03697057, -0.02566615, -0.02982333]), 'train_neg_mean_squared_error': array([-0.03073043, -0.03079555, -0.0279176 , -0.02967838, -0.02908508,
+       -0.02871346, -0.02767886, -0.03124568, -0.03009376, -0.03074111,
+       -0.02976322, -0.03019079, -0.02810869, -0.03067484, -0.02970284]), 'test_max_error': array([-0.5951339 , -0.63216069, -0.60279292, -0.5940561 , -0.60695402,
+       -0.61233636, -0.63538756, -0.59037205, -0.5907577 , -0.59484222,
+       -0.60853489, -0.59439048, -0.60599912, -0.63264968, -0.59397764]), 'train_max_error': array([-0.6324075 , -0.60971713, -0.63320339, -0.62317342, -0.6246327 ,
+       -0.63252281, -0.6109912 , -0.62364259, -0.62426135, -0.62770868,
+       -0.62861056, -0.62340166, -0.63435727, -0.59924634, -0.62347885]), 'test_neg_mean_absolute_error': array([-0.09198848, -0.09319227, -0.10672408, -0.09657652, -0.10025271,
+       -0.09947028, -0.10729725, -0.09003898, -0.09806977, -0.08862683,
+       -0.0964779 , -0.0952601 , -0.10161935, -0.09315338, -0.09618975]), 'train_neg_mean_absolute_error': array([-0.10012584, -0.10033645, -0.09104945, -0.09601731, -0.09375464,
+       -0.09441384, -0.08893966, -0.10023709, -0.0976017 , -0.09833782,
+       -0.09397861, -0.0983767 , -0.08911497, -0.10046477, -0.09576528]), 'test_explained_variance': array([0.02321492, 0.00938921, 0.05500934, 0.06386037, 0.06666798,
+       0.02054686, 0.02151625, 0.07176153, 0.06681589, 0.08462328,
+       0.04606099, 0.04296111, 0.04603736, 0.02146206, 0.05204355]), 'train_explained_variance': array([0.06043766, 0.06220026, 0.0562507 , 0.05197364, 0.0482186 ,
+       0.06379054, 0.057977  , 0.04965594, 0.05201354, 0.04724691,
+       0.04926343, 0.05673519, 0.04979076, 0.06213737, 0.05372684]), 'test_neg_root_mean_squared_error': array([-0.16008279, -0.15940294, -0.19151267, -0.17258498, -0.18021584,
+       -0.18360406, -0.19619377, -0.15413747, -0.16786274, -0.15947552,
+       -0.17412203, -0.16670114, -0.19227733, -0.16020659, -0.17269431]), 'train_neg_root_mean_squared_error': array([-0.17530098, -0.17548661, -0.1670856 , -0.17227413, -0.17054349,
+       -0.16945047, -0.16636966, -0.17676449, -0.17347555, -0.17533142,
+       -0.1725202 , -0.17375496, -0.16765647, -0.17514234, -0.17234512]), 'test_neg_median_absolute_error': array([-0.05863447, -0.06145573, -0.05693508, -0.05423886, -0.0536573 ,
+       -0.05046975, -0.05579214, -0.05965967, -0.06056606, -0.05244894,
+       -0.05420005, -0.05852104, -0.04697464, -0.06072748, -0.0576903 ]), 'train_neg_median_absolute_error': array([-0.05772718, -0.05863724, -0.05113414, -0.05591552, -0.05581893,
+       -0.05481933, -0.04776821, -0.0600968 , -0.05669468, -0.05718286,
+       -0.05109783, -0.05878875, -0.04759999, -0.058663  , -0.05754027])} 
+
+ElasticNet r2 Nested CV Median 0.04588514278187017
+ElasticNet MSE Nested CV Median -0.029785575675333287
+ElasticNet RMSE Nested CV Median -0.17258498102480785
+ElasticNet Explained Variance Nested CV Median 0.04606098785238821
+ElasticNet MAE Nested CV Median -0.09647789743196221
+
+
+Best Parameters: 
+OrderedDict([('alpha', 0.001), ('l1_ratio', 0.0), ('max_iter', 1000)])
+
+Best Estimator: ElasticNet(alpha=0.001, l1_ratio=0.0, random_state=0, tol=1)
+
+
+Non-nested CV Results:
+ElasticNet Train r2: 0.06043765617975205 Test r2: 0.019318713587115233
+ElasticNet Train MSE: 0.030730432737520852 Test MSE: 0.025626498566867315
+ElasticNet Train Explained Variance Score: 0.06043765617975183 Test Explained Variance Score: 0.02321492109908585
+ElasticNet Train MAE: 0.10012584209273137 Test MAE: 0.0919884798707018
+ElasticNet Train Max Error: 0.6324075005777628 Test Max Error: 0.5951338998392044
+
+
+ElasticNet Best model predicted r2: 0.03043665788967642
+
+
+All r2 results: [array([0.37890688, 0.49667644, 0.6950512 , 0.66597303, 0.58686736,
+       0.58273592, 0.56742556, 0.55743716, 0.55029863, 0.52458146,
+       0.70313734, 0.51303957, 0.74625893, 0.32413173, 0.5394147 ]), array([-0.05992584, -0.08108783,  0.03834884,  0.01074273,  0.0292208 ,
+       -0.00920538,  0.00194915, -0.03598069, -0.01332917,  0.00451877,
+        0.00176085, -0.04145894,  0.05065732, -0.07600513,  0.01027225]), array([0.02022183, 0.01872604, 0.03934597, 0.05334215, 0.06047493,
+       0.0138713 , 0.01174608, 0.04980123, 0.04996703, 0.07240623,
+       0.04305234, 0.03944311, 0.03930878, 0.0234742 , 0.05469895]), array([0.01931871, 0.00860326, 0.04776922, 0.06265551, 0.06633049,
+       0.01159022, 0.01259209, 0.05785098, 0.05961204, 0.08428904,
+       0.04588514, 0.04042944, 0.0401501 , 0.01780128, 0.05153408])]
+Best model by median r2: XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+             colsample_bynode=1, colsample_bytree=1, gamma=0, gpu_id=-1,
+             importance_type='gain', interaction_constraints='',
+             learning_rate=0.2, max_delta_step=0, max_depth=3,
+             min_child_weight=1, missing=nan, monotone_constraints='()',
+             n_estimators=50, n_jobs=4, num_parallel_tree=1, random_state=0,
+             reg_alpha=1, reg_lambda=6, scale_pos_weight=1, subsample=1,
+             tree_method='exact', validate_parameters=1, verbosity=None)
+Best model by predicted r2: KNeighborsRegressor(metric='manhattan', n_neighbors=17, weights='distance')

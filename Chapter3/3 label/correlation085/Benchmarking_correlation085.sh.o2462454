@@ -1,0 +1,211 @@
+XGBR Nested CV results for all scores: 
+ {'fit_time': array([83.00768495, 86.21936297, 84.16730857, 82.28266644, 89.50690007,
+       84.87911749, 91.41123295, 87.97897792, 79.52613997, 89.18956947]), 'score_time': array([0.00593233, 0.00570202, 0.00546765, 0.00536227, 0.00551128,
+       0.005723  , 0.00556874, 0.0054307 , 0.00552344, 0.00553083]), 'test_accuracy': array([0.76666667, 0.56666667, 0.76666667, 0.68965517, 0.79310345,
+       0.75862069, 0.62068966, 0.79310345, 0.72413793, 0.79310345]), 'test_balanced_accuracy': array([0.6962963 , 0.46666667, 0.6       , 0.55238095, 0.7037037 ,
+       0.6962963 , 0.51851852, 0.64444444, 0.62962963, 0.67407407]), 'test_f1_weighted': array([0.75629234, 0.54166667, 0.6952381 , 0.62453231, 0.78006375,
+       0.76149971, 0.60956618, 0.71997438, 0.69798188, 0.75768575]), 'test_precision_weighted': array([0.76111111, 0.56349206, 0.64166667, 0.57065585, 0.82509074,
+       0.76724138, 0.59913793, 0.66043557, 0.69984326, 0.82298851]), 'test_recall_weighted': array([0.76666667, 0.56666667, 0.76666667, 0.68965517, 0.79310345,
+       0.75862069, 0.62068966, 0.79310345, 0.72413793, 0.79310345])} 
+
+XGBR Accuracy Nested CV Average 0.7272413793103449
+XGBR Balanced Accuracy Nested CV Average 0.6182010582010582
+XGBR F1 Nested CV Average 0.6944501058684913
+XGBR Precision Nested CV Average 0.6911663081885672
+XGBR Recall Nested CV Average 0.7272413793103449
+
+
+Best Parameters: 
+OrderedDict([('learning_rate', 0.2), ('max_depth', 3), ('n_estimators', 10), ('reg_alpha', 6), ('reg_lambda', 7)])
+
+Best Estimator: XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1, eval_metric='mlogloss',
+              gamma=0, gpu_id=-1, importance_type='gain',
+              interaction_constraints='', learning_rate=0.2, max_delta_step=0,
+              max_depth=3, min_child_weight=1, missing=nan,
+              monotone_constraints='()', n_estimators=10, n_jobs=4,
+              num_parallel_tree=1, objective='multi:softprob', random_state=0,
+              reg_alpha=6, reg_lambda=7, scale_pos_weight=None, subsample=1,
+              tree_method='exact', validate_parameters=1, verbosity=0)
+
+
+Non-nested CV Results:
+
+
+LGBM Nested CV results for all scores: 
+ {'fit_time': array([79.14905691, 77.56563067, 83.07477331, 77.36743736, 77.12087774,
+       76.94822669, 80.30018592, 72.6747601 , 73.95576477, 82.08201599]), 'score_time': array([0.00538015, 0.00555182, 0.00536156, 0.0052793 , 0.00533724,
+       0.00536442, 0.00549412, 0.00530219, 0.00543332, 0.00536537]), 'test_accuracy': array([0.8       , 0.56666667, 0.8       , 0.62068966, 0.72413793,
+       0.75862069, 0.68965517, 0.75862069, 0.75862069, 0.79310345]), 'test_balanced_accuracy': array([0.66666667, 0.47777778, 0.63333333, 0.4952381 , 0.57037037,
+       0.6962963 , 0.56296296, 0.66666667, 0.6962963 , 0.62962963]), 'test_f1_weighted': array([0.71666667, 0.55664488, 0.72689076, 0.56203863, 0.65787694,
+       0.75293536, 0.65203762, 0.73755928, 0.75176447, 0.71773247]), 'test_precision_weighted': array([0.65714286, 0.56923559, 0.66746411, 0.51352265, 0.61637931,
+       0.75      , 0.62068966, 0.72471264, 0.74827586, 0.65662432]), 'test_recall_weighted': array([0.8       , 0.56666667, 0.8       , 0.62068966, 0.72413793,
+       0.75862069, 0.68965517, 0.75862069, 0.75862069, 0.79310345])} 
+
+LGBM Accuracy Nested CV Average 0.7270114942528736
+LGBM Balanced Accuracy Nested CV Average 0.6095238095238095
+LGBM F1 Nested CV Average 0.6832147063704316
+LGBM Precision Nested CV Average 0.6524047002070915
+LGBM Recall Nested CV Average 0.7270114942528736
+
+
+Best Parameters: 
+OrderedDict([('learning_rate', 0.2), ('max_depth', 4), ('n_estimators', 10), ('reg_alpha', 1), ('reg_lambda', 10)])
+
+Best Estimator: LGBMClassifier(learning_rate=0.2, max_depth=4, n_estimators=10, random_state=0,
+               reg_alpha=1, reg_lambda=10)
+
+
+Non-nested CV Results:
+
+
+CB Nested CV results for all scores: 
+ {'fit_time': array([148.77039909, 138.63479614, 146.47534776, 139.46824479,
+       145.07171583, 147.5106411 , 139.95489717, 143.17050624,
+       135.76532459, 135.06914306]), 'score_time': array([0.01117134, 0.00495148, 0.00565386, 0.00587797, 0.00493383,
+       0.00725555, 0.00487137, 0.00563717, 0.00679803, 0.00598311]), 'test_accuracy': array([0.8       , 0.73333333, 0.76666667, 0.68965517, 0.75862069,
+       0.72413793, 0.75862069, 0.79310345, 0.72413793, 0.75862069]), 'test_balanced_accuracy': array([0.73333333, 0.62222222, 0.6       , 0.54285714, 0.63703704,
+       0.67407407, 0.65185185, 0.64444444, 0.67407407, 0.59259259]), 'test_f1_weighted': array([0.77934942, 0.71630781, 0.7017017 , 0.62173459, 0.72684246,
+       0.72413793, 0.73264666, 0.73630832, 0.71729423, 0.68472906]), 'test_precision_weighted': array([0.78568627, 0.71296296, 0.67424242, 0.57168784, 0.80603448,
+       0.72413793, 0.73563218, 0.69147005, 0.71831617, 0.62931034]), 'test_recall_weighted': array([0.8       , 0.73333333, 0.76666667, 0.68965517, 0.75862069,
+       0.72413793, 0.75862069, 0.79310345, 0.72413793, 0.75862069])} 
+
+CB Accuracy Nested CV Average 0.7506896551724138
+CB Balanced Accuracy Nested CV Average 0.6372486772486773
+CB F1 Nested CV Average 0.7141052181907666
+CB Precision Nested CV Average 0.7049480665572798
+CB Recall Nested CV Average 0.7506896551724138
+
+
+Best Parameters: 
+OrderedDict([('depth', 4), ('iterations', 50), ('learning_rate', 0.14306295885560247)])
+
+Best Estimator: <catboost.core.CatBoostClassifier object at 0x2b7a02a46610>
+
+
+Non-nested CV Results:
+
+
+GBR Nested CV results for all scores: 
+ {'fit_time': array([114.48658824, 115.99730754, 116.97421288, 115.70608258,
+       119.43903065, 115.52121401, 125.59903216, 110.74147892,
+       112.77179503, 116.19839239]), 'score_time': array([0.00526977, 0.00567675, 0.00517201, 0.00519681, 0.00519657,
+       0.00504827, 0.0053432 , 0.00555587, 0.00519514, 0.00532198]), 'test_accuracy': array([0.83333333, 0.56666667, 0.76666667, 0.72413793, 0.79310345,
+       0.72413793, 0.72413793, 0.79310345, 0.79310345, 0.79310345]), 'test_balanced_accuracy': array([0.75555556, 0.46666667, 0.61111111, 0.57619048, 0.71851852,
+       0.62962963, 0.67407407, 0.68888889, 0.71851852, 0.62962963]), 'test_f1_weighted': array([0.81313131, 0.54814815, 0.71176471, 0.65621735, 0.78232759,
+       0.70689655, 0.71728171, 0.76353059, 0.78630577, 0.71921182]), 'test_precision_weighted': array([0.82222222, 0.59404762, 0.66842105, 0.6061706 , 0.78634212,
+       0.6984449 , 0.7137931 , 0.76105477, 0.78232759, 0.6637931 ]), 'test_recall_weighted': array([0.83333333, 0.56666667, 0.76666667, 0.72413793, 0.79310345,
+       0.72413793, 0.72413793, 0.79310345, 0.79310345, 0.79310345])} 
+
+GBR Accuracy Nested CV Average 0.7511494252873563
+GBR Balanced Accuracy Nested CV Average 0.6468783068783068
+GBR F1 Nested CV Average 0.7204815549218602
+GBR Precision Nested CV Average 0.7096617070905797
+GBR Recall Nested CV Average 0.7511494252873563
+
+
+Best Parameters: 
+OrderedDict([('criterion', 'squared_error'), ('learning_rate', 0.09677109893577729), ('max_depth', 2), ('max_features', 'sqrt'), ('n_estimators', 42)])
+
+Best Estimator: GradientBoostingClassifier(criterion='squared_error',
+                           learning_rate=0.09677109893577729, max_depth=2,
+                           max_features='sqrt', n_estimators=42,
+                           random_state=0)
+
+
+Non-nested CV Results:
+
+
+RFR Nested CV results for all scores: 
+ {'fit_time': array([102.18094897,  93.61760092, 101.04802275, 103.67016196,
+        98.22565413, 101.61427832,  89.80552959, 110.38608813,
+        89.33086634, 101.19307733]), 'score_time': array([0.00615382, 0.00698709, 0.0094564 , 0.0068965 , 0.00866961,
+       0.00889993, 0.00966644, 0.00923562, 0.00823283, 0.00952888]), 'test_accuracy': array([0.76666667, 0.66666667, 0.8       , 0.65517241, 0.75862069,
+       0.75862069, 0.65517241, 0.79310345, 0.72413793, 0.79310345]), 'test_balanced_accuracy': array([0.68148148, 0.55555556, 0.63333333, 0.51904762, 0.60740741,
+       0.65185185, 0.54074074, 0.68888889, 0.58518519, 0.62962963]), 'test_f1_weighted': array([0.75138889, 0.64126984, 0.72857143, 0.59195402, 0.68965517,
+       0.74271621, 0.60387931, 0.76353059, 0.68338558, 0.71921182]), 'test_precision_weighted': array([0.78333333, 0.65833333, 0.675     , 0.54127482, 0.63793103,
+       0.74137931, 0.56039093, 0.76105477, 0.64942529, 0.6637931 ]), 'test_recall_weighted': array([0.76666667, 0.66666667, 0.8       , 0.65517241, 0.75862069,
+       0.75862069, 0.65517241, 0.79310345, 0.72413793, 0.79310345])} 
+
+RFR Accuracy Nested CV Average 0.7371264367816093
+RFR Balanced Accuracy Nested CV Average 0.6093121693121694
+RFR F1 Nested CV Average 0.691556286954093
+RFR Precision Nested CV Average 0.6671915913700903
+RFR Recall Nested CV Average 0.7371264367816093
+
+
+Best Parameters: 
+OrderedDict([('criterion', 'entropy'), ('max_depth', 4), ('max_features', 'log2'), ('n_estimators', 50)])
+
+Best Estimator: RandomForestClassifier(criterion='entropy', max_depth=4, max_features='log2',
+                       n_estimators=50, random_state=0)
+
+
+Non-nested CV Results:
+
+
+DT Nested CV results for all scores: 
+ {'fit_time': array([50.45523739, 51.38345575, 52.0254271 , 51.05032921, 50.9146781 ,
+       51.81108451, 51.31395555, 48.73886442, 51.65163493, 52.61935449]), 'score_time': array([0.00522256, 0.00510073, 0.00489616, 0.00483394, 0.00494742,
+       0.00486445, 0.00512147, 0.00503564, 0.00505686, 0.00493741]), 'test_accuracy': array([0.73333333, 0.5       , 0.83333333, 0.68965517, 0.68965517,
+       0.68965517, 0.55172414, 0.79310345, 0.72413793, 0.75862069]), 'test_balanced_accuracy': array([0.65555556, 0.41111111, 0.74444444, 0.58571429, 0.54814815,
+       0.59259259, 0.44444444, 0.76296296, 0.67407407, 0.62222222]), 'test_f1_weighted': array([0.69423963, 0.47082166, 0.82083333, 0.66091954, 0.62561576,
+       0.67485709, 0.52037618, 0.79796779, 0.71729423, 0.72075727]), 'test_precision_weighted': array([0.7       , 0.48809524, 0.82287582, 0.73563218, 0.57758621,
+       0.67385057, 0.49425287, 0.80541872, 0.71831617, 0.7876588 ]), 'test_recall_weighted': array([0.73333333, 0.5       , 0.83333333, 0.68965517, 0.68965517,
+       0.68965517, 0.55172414, 0.79310345, 0.72413793, 0.75862069])} 
+
+DT Accuracy Nested CV Average 0.6963218390804599
+DT Balanced Accuracy Nested CV Average 0.6041269841269841
+DT F1 Nested CV Average 0.6703682478305483
+DT Precision Nested CV Average 0.6803686582150872
+DT Recall Nested CV Average 0.6963218390804599
+
+
+Best Parameters: 
+OrderedDict([('criterion', 'gini'), ('max_depth', 4), ('max_features', 'sqrt')])
+
+Best Estimator: DecisionTreeClassifier(max_depth=4, max_features='sqrt', random_state=0)
+
+
+Non-nested CV Results:
+
+
+ExtraTrees Nested CV results for all scores: 
+ {'fit_time': array([84.49779987, 86.82993913, 88.93125415, 88.09855628, 86.06064606,
+       83.42038584, 86.00855136, 82.46068454, 81.92293215, 83.14278483]), 'score_time': array([0.00894785, 0.00961804, 0.00920463, 0.01014924, 0.0098176 ,
+       0.00909448, 0.00903583, 0.00821829, 0.00960398, 0.00961328]), 'test_accuracy': array([0.83333333, 0.66666667, 0.76666667, 0.65517241, 0.75862069,
+       0.72413793, 0.62068966, 0.75862069, 0.65517241, 0.62068966]), 'test_balanced_accuracy': array([0.75555556, 0.52222222, 0.62222222, 0.53809524, 0.60740741,
+       0.62962963, 0.54814815, 0.62222222, 0.57037037, 0.48888889]), 'test_f1_weighted': array([0.80845295, 0.61704261, 0.69610507, 0.59310345, 0.68965517,
+       0.69853513, 0.60517241, 0.69956897, 0.63885311, 0.56238245]), 'test_precision_weighted': array([0.85888889, 0.58425926, 0.6387632 , 0.55172414, 0.63793103,
+       0.69959432, 0.59979101, 0.64945602, 0.63031609, 0.51410658]), 'test_recall_weighted': array([0.83333333, 0.66666667, 0.76666667, 0.65517241, 0.75862069,
+       0.72413793, 0.62068966, 0.75862069, 0.65517241, 0.62068966])} 
+
+ExtraTrees Accuracy Nested CV Average 0.7059770114942528
+ExtraTrees Balanced Accuracy Nested CV Average 0.5904761904761904
+ExtraTrees F1 Nested CV Average 0.6608871317254631
+ExtraTrees Precision Nested CV Average 0.6364830547898498
+ExtraTrees Recall Nested CV Average 0.7059770114942528
+
+
+Best Parameters: 
+OrderedDict([('criterion', 'entropy'), ('max_depth', 4), ('max_features', 'log2'), ('n_estimators', 36)])
+
+Best Estimator: ExtraTreesClassifier(criterion='entropy', max_depth=4, max_features='log2',
+                     n_estimators=36, random_state=0)
+
+
+Non-nested CV Results:
+
+
+All r2 results: [array([0.6962963 , 0.46666667, 0.6       , 0.55238095, 0.7037037 ,
+       0.6962963 , 0.51851852, 0.64444444, 0.62962963, 0.67407407]), array([0.66666667, 0.47777778, 0.63333333, 0.4952381 , 0.57037037,
+       0.6962963 , 0.56296296, 0.66666667, 0.6962963 , 0.62962963]), array([0.73333333, 0.62222222, 0.6       , 0.54285714, 0.63703704,
+       0.67407407, 0.65185185, 0.64444444, 0.67407407, 0.59259259]), array([0.75555556, 0.46666667, 0.61111111, 0.57619048, 0.71851852,
+       0.62962963, 0.67407407, 0.68888889, 0.71851852, 0.62962963]), array([0.68148148, 0.55555556, 0.63333333, 0.51904762, 0.60740741,
+       0.65185185, 0.54074074, 0.68888889, 0.58518519, 0.62962963]), array([0.65555556, 0.41111111, 0.74444444, 0.58571429, 0.54814815,
+       0.59259259, 0.44444444, 0.76296296, 0.67407407, 0.62222222]), array([0.75555556, 0.52222222, 0.62222222, 0.53809524, 0.60740741,
+       0.62962963, 0.54814815, 0.62222222, 0.57037037, 0.48888889])]
+Best model by median balanced accuracy: GradientBoostingClassifier(criterion='squared_error',
+                           learning_rate=0.09677109893577729, max_depth=2,
+                           max_features='sqrt', n_estimators=42,
+                           random_state=0)
