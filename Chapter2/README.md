@@ -86,7 +86,7 @@ The two training datasets containing either 3 labels or 4 labels both underwent 
 
 EDA for the 4-label dataset was also explored [here](https://github.com/hlnicholls/PhD-Thesis/tree/main/Chapter2/BP%20GWAS%20EDA/4%20label) with again 0.9 correlation providing the best ML to be the selected feature cleaning method.
 
-The feature selection, which in itself required embedded ML using BorutaShap, is further explored in chapter 3 (can can be found [here])(https://github.com/hlnicholls/PhD-Thesis/blob/main/Chapter3/3%20label/correlation09/Feature_Imputation_and_Selection_BorutaShap.ipynb) ). However, the selected features were explored on EDA presented here in chapter 2 in the ```EDA-training-data-3l.ipynb``` and ```EDA-training-data-4l.ipynb```scripts.
+The feature selection, which in itself required embedded ML using BorutaShap, is further explored in chapter 3 and can can be found [here](https://github.com/hlnicholls/PhD-Thesis/blob/main/Chapter3/3%20label/correlation09/Feature_Imputation_and_Selection_BorutaShap.ipynb). However, the selected features were explored on EDA presented here in chapter 2 in the ```EDA-training-data-3l.ipynb``` and ```EDA-training-data-4l.ipynb```scripts.
 
 # References
 1. Evangelou, E., Warren, H.R., Mosen-Ansorena, D. et al. Genetic analysis of over 1 million people identifies 535 new loci associated with blood pressure traits. Nat Genet 50, 1412–1425 (2018). https://doi.org/10.1038/s41588-018-0205-x
